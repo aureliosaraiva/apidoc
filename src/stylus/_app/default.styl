@@ -1,0 +1,834 @@
+/*
+  Variables
+*/
+
+color-default   = #69797e; // verde musgo
+color-primary   = #404548; // verde forte/grafite
+color-buy       = #27ae60;
+color-secondary = darken(color-default, 30%)
+
+/*
+  Buttons
+*/
+
+$buy-ticket
+  display: inline-block
+  padding: .6em 2em
+  background: color-buy
+  color: #fff
+  text-decoration: none
+  font-weight: 400
+  font-size: 2.2em
+  text-transform: uppercase
+  border-radius: .15em
+  &:hover
+    background: lighten(@background, 10%)
+    box-shadow: 0 0 20px color-primary
+
+.arrow
+  position: absolute
+  bottom: 3em
+  left: 50%
+  margin-left: -20px
+  width: 3.8em
+  height: @width
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=')
+  background-size: contain
+  opacity: .5
+  animation(bounce 2s infinite)
+  @media phone
+    display: none
+
+@keyframes bounce
+  0%
+    transform(translateY(0))
+  50%
+    transform(translateY(-30px))
+
+/*
+  Default
+*/
+
+*
+  transition: all 0.2s ease
+
+html, body
+  height: 100%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body
+  background: url('../img/bg-body.jpg')
+  background-size: cover
+  background-attachment: fixed
+  font-family: 'Open Sans', Arial, helvetica, sans-serif
+  font-size: 62.5%
+  @media phone
+    background-position: center
+
+/*
+  Typography
+*/
+h2
+  font-size: 5em
+  text-align: center
+  color: color-default
+  line-height: 1
+  margin: 0 0 1.6em 0
+  padding: 2.4em 0 0 0
+  font-weight: 300
+  position: relative
+  
+  span
+    position: relative
+
+    &:before
+      color: color-default
+      font-size: 1.2em
+      font-family: 'fif-icons'
+      left: 35%
+      position: absolute
+      top: -1.2em
+
+    &:after
+      content: ''
+      width: 1em
+      height: 0
+      border-color: color-default
+      position: absolute
+      left: 35%
+      bottom: -.4em
+      border-top: 1px solid #ddd
+
+  &.inverse
+    color: #fff
+    
+    span
+      &:before
+        color: #fff
+
+/*
+  Section: Logo and Description
+*/
+
+section
+  padding: 6em 0
+
+.container
+  container()
+
+.header
+  height: 100%
+  position: relative
+  padding: 7em 0 9em
+  background: rgba(color-primary, .6)
+  text-align: center
+  @media phone
+    padding-top: 5em
+    height: auto
+
+.logo
+  background: url('../img/logo.png') no-repeat
+  background-size: 100% 100%
+  width: 16em
+  height: @width
+  margin: 0 auto
+  text-indent: -9999px
+  @media phone
+    width: @width - 5
+    height: @width
+
+.description
+  display: inline-block
+  font-size: 3.8em
+  text-align: center
+  color: color-default
+  line-height: 1
+  margin: 0
+  padding: 1em 0
+  font-weight: 300
+  position: relative
+  margin: 1.2em 0 1em
+  padding: 0
+  text-align: center
+  borderColor = #999
+
+  &:after, &:before
+    content: ''
+    width: .5em
+    height: @width
+    position: absolute
+  
+  &:after
+    left: -.4em
+    top: -.1em
+    border-top: 1px solid borderColor
+    border-left: @border-top
+
+  &:before
+    right: -.4em
+    bottom: -.2em
+    border-right: 1px solid borderColor
+    border-bottom: @border-right
+
+  @media phone
+    margin-top: .7em
+    margin-bottom: 1em
+
+  .description-item
+    display: inline-block
+    padding: .1em 0
+    font-weight: 300
+    font-size: .9em
+    text-transform: uppercase
+    color: #fff
+    text-shadow: 0 0 10px rgba(#000, .5)
+    @media phone
+      font-size: @font-size - .4
+      line-height: 1.6em
+
+  .description-value.location
+    background: none
+    @media phone
+      display: block
+
+  .description-divisor:nth-child(4)
+    @media phone
+      display: none
+
+/*
+  Section: Buy Ticket
+*/
+
+.buy-ticket-area
+  text-align: center
+  position: relative
+  @media phone
+    padding-top: 0
+
+.buy-ticket-header
+  @extends $buy-ticket
+
+/*
+  Menu
+*/
+.main-menu
+  background: color-secondary
+  height: 8em
+  box-shadow: 0 -20px 70px rgba(#000, .2)
+  @media tablet
+    display: none
+  @media phone
+    display: none
+
+.main-menu-fixed
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 9999
+  box-shadow: 0 5px 20px rgba(#000, .2)
+
+.main-menu-list, .main-menu-buy
+  margin: 0
+  padding: 0
+
+.main-menu-logo
+  display: inline-block
+  margin-right: 3em
+  padding: 0
+  background: url('../img/logo.png') center center no-repeat
+  width: 15em
+  height: 8em
+  vertical-align: middle
+  background-size: 100%
+  opacity: .3
+
+  &:hover
+    opacity: 1
+
+.main-menu-buy
+  margin-right: 0 !important
+
+.main-menu-link-buy
+  @extends $buy-ticket
+  vertical-align: middle
+  font-size: 1.8em
+  padding: .3em 1em
+
+.main-menu-item
+  display: inline-block
+  padding: 0
+  vertical-align: middle
+
+.main-menu-link
+  text-decoration: none
+  color: #fff
+  font-size: 1.5em
+  font-weight: 400
+  text-transform: uppercase
+  transition: none
+  padding: .3em .6em
+  border-radius: .3em
+
+  &.last-link
+    margin-right: 1.5em
+
+  &:hover
+    background: darken(color-secondary, 10%)
+
+/*
+  Section: Features
+*/
+
+.features
+  background: lighten(#eee, 50%)
+  padding-bottom: 8em
+
+  h2
+    padding-top: 1.8em
+    span
+      &:after
+        left: 46%
+      &:before
+        left: 46.5%
+        content: '\e804'
+
+.feature-item
+  column(6)
+  text-align: center
+  padding: 0 7em
+  min-height: 34em
+  border-radius: 1em
+  transition: background 1s ease
+  
+  &:hover
+    background: #fff
+    
+  @media phone
+    column(12)
+  
+.feature-title
+  font-size: 2em
+  display: block
+  color: darken(color-default, 5%)
+  font-weight: 800
+  text-transform: uppercase
+  margin-bottom: .6em
+
+  &:before
+    font-size: 5em
+    display: block
+    margin: 0 auto .2em
+    line-height: 1
+    color: lighten(color-default, 40%)
+    
+.feature-description
+  font-size: 1.4em
+  line-height: 1.6em
+  color: #999
+  margin: 0
+
+/*
+  Section: Speakers
+*/
+.speakers
+  background: #fff
+  padding-bottom: 3em
+
+  h2
+    span
+      &:after
+        left: 43%
+      &:before
+        left: 43.5%
+        content: '\e80f'
+
+.speakers-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+.speaker-item
+  column(6)
+  text-align: left
+  position: relative
+  padding-left: 19.5em
+  height: 30em
+  @media tablet
+    column(12)
+    padding-left: 19.5em
+  @media phone
+    text-align: center
+    height: auto
+    padding-bottom: 3em
+    position: static
+    column(12)
+
+.speaker-item-photo
+  width: 16em
+  height: @width
+  margin: 0 auto
+  border-radius: 50%
+  overflow: hidden
+  text-align: center
+  border: 10px solid rgba(color-default, .0)
+  box-shadow: 0 0 0 3px rgba(color-default, .1)
+  transition: all .4s ease
+  position: absolute
+  left: 0
+  @media phone
+    position: static
+    margin: 3em auto 2em auto
+
+  &:hover
+    box-shadow: 0 0 0 3px rgba(color-default, .9)
+
+  img
+    display: inline-block
+    max-width: 180%
+    max-height: 100%
+    margin-left: -4%
+
+.social-network
+  padding-top: .3em
+  position: absolute
+  left: 2.9em
+  top: 17em
+  width: 11em
+  text-align: center
+  @media phone
+    position: static
+    width: 100%
+    padding: 1em 0 0 0
+
+.social-link
+  font-size: 3em
+  text-decoration: none
+  &:before
+    margin: 0 .05em
+
+.icon-github-circled
+  color: #555
+  &:hover
+    color: lighten(@color, 10%)
+
+.icon-twitter-circled
+  color: #5eaade
+  &:hover
+    color: lighten(@color, 10%)
+
+.icon-facebook-circled
+  color: #3c599f
+  &:hover
+    color: lighten(@color, 10%)
+
+.speaker-item-title
+  font-size: 2.2em
+  text-transform: uppercase
+  color: color-default
+  font-weight: 400
+  position: relative
+  margin: .2em 0 .3em
+  letter-spacing: -.02em
+  position: relative
+  display: inline-block
+  borderColor = #ddd
+
+  &:after, &:before
+    content: ''
+    width: .5em
+    height: @width
+    position: absolute
+  
+  &:after
+    left: -.5em
+    top: -.1em
+    border-top: 1px solid borderColor
+    border-left: @border-top
+
+  &:before
+    right: -.5em
+    bottom: -.1em
+    border-right: 1px solid borderColor
+    border-bottom: @border-right
+
+.speaker-item-company
+  color: lighten(color-default, 20%)
+  font-size: 1.4em
+  text-decoration: none
+  display: inline-block
+  margin: .4em 0 0 0
+  border-bottom: 1px solid rgba(color-primary, .2)
+  opacity: .5
+
+  &:hover
+    color: color-primary
+    border-color: color-primary
+    opacity: 1
+
+.speaker-item-bio
+  font-size: 1.4em
+  color: #aaa
+  margin: 1em 0 0 0
+  padding: 0 5em 0 0
+  @media phone
+    padding: 0 2em
+
+/*
+  Section: Location
+*/
+
+.location
+  position: relative
+  background: #6e767b
+  padding: 0
+
+  h2
+    margin-bottom: .91em
+    padding-top: 1.4em
+    span
+      &:before
+        content: '\e811'
+        left: 40%
+      &:after
+        left: 40%
+        border-top: 1px solid #fff
+
+.location-info
+  position: absolute
+  width: 70%
+  max-width: 95%
+  top: 50%
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
+  z-index: 1000
+  border-radius: 1em
+  text-align: center
+  padding: .3em 2em
+  @media phone
+    width: 100%
+
+.location-info-description
+  font-size: 2em
+  color: #fff
+  margin: 0 0 1em 0
+  @media phone
+    font-size: 1.6em
+
+#map
+  width: 100%
+  height: 50em
+  background: #6e767b;
+  position: relative
+  tranform: translateZ(0)
+  transition: none
+  @media phone
+    height: 40em
+
+/*
+  Section: Schedule
+*/
+
+.schedule
+  background: #fff
+
+  h2
+    margin-bottom: 1em
+    span
+      &:before
+        content: '\e824'
+        left: 42%
+      &:after
+        left: 42%
+
+.schedule-alert
+  font-size: 1.4em
+  color: #ccc
+  width: 72%
+  text-align: center
+  font-weight: 400
+  line-height: 1.8em
+  font-style: italic
+  @media phone
+    width: 80%
+    margin: 0 auto
+  
+.schedule-list
+  padding: 1em 0
+  margin: 3em 16em
+  list-style: none
+  border-left: 3px dotted #ddd
+  @media phone
+    margin: 3em 0 3em 4em
+  
+.schedule-item
+  position: relative
+  padding: .1em 0 0 5em
+  margin-bottom: 5em
+  min-height: 7em
+  
+  &.other
+    .schedule-item-type
+      background: lighten(color-default, 40%)
+  
+  &:hover
+    .schedule-item-type
+      box-shadow: 0 0 20px 5px rgba(lighten(color-default, 30%), .5)
+
+  
+.schedule-item-type
+  position: absolute
+  left: -3.4em
+  top: .4em
+  background: color-default
+  border-radius: 50%
+  padding: 1em
+  text-align: center
+  
+  span
+    color: #fff
+    font-size: 3em
+    margin: 0
+  
+.schedule-item-hour
+  position: absolute
+  left: -5.8em
+  top: .6em
+  text-align: right
+  font-size: 3em
+  font-weight: 800
+  color: color-default
+  margin: 0
+  line-height: 1
+  width: 4em
+  @media phone
+    position: static
+    display: inline-block
+    text-align: left
+    margin-top: .5em
+  
+.schedule-item-box
+  display: block
+  
+.schedule-item-title
+  font-size: 2.4em
+  line-height: 1
+  margin: .84em 0 0
+  font-weight: normal
+  color: color-secondary
+  @media phone
+    margin-top: .3em
+    line-height: 1.4em
+  
+.schedule-item-speaker
+  line-height: 1
+  font-size: 1.5em
+  margin: .7em 0 0 .1em
+  color: color-buy
+  text-transform: uppercase
+  
+.schedule-item-description
+  color: #888
+  font-size: 1.3em
+  line-height: 1.8em
+  margin: .5em 0 0 .25em
+  width: 90%
+  
+/*
+  Section: Organizers
+*/
+
+.organizers
+  background: lighten(#eee, 50%)
+
+/*
+  Section: Tickets
+*/
+
+.tickets
+  background: color-secondary
+  padding-bottom: 5em
+  text-align: center
+
+  h2
+    margin-bottom: .7em
+    
+    span
+      &:before
+        content: '\e805'
+        left: 33%
+      &:after
+        left: 35%
+
+.plan-item
+  text-align: center
+  display: inline-block
+  margin: 1em
+
+.plan-lot
+  color: #fff
+  margin: 0
+  line-height: 1
+  font-weight: 300
+  font-size: 2em
+  text-transform: uppercase
+  padding: 1em
+
+.plan-price
+  color: #ddd
+  font-weight: 800
+  font-size: 4em
+  margin: 0 0 .7em 0
+  line-height: 1
+
+.buy-ticket-plan
+  @extends $buy-ticket
+  font-size: 3em
+  @media phone
+    font-size: 2em
+    
+.tickets-more
+  font-size: 1.6em
+  color: #eee
+  margin: 1em
+  line-height: 1.8em
+  color: lighten(color-default, 30%)
+
+/*
+  Section: Sponsors
+*/
+
+.sponsors
+  background: url('../img/bg-footer.jpg') bottom center no-repeat #fbfbfb
+
+.sponsors-header
+  span
+    &:after
+      left: 40%
+    &:before
+      content: '\e81b'
+      left: 38.5%
+
+.support-header
+  span
+    &:after
+      left: 31%
+    &:before
+      content: '\e818'
+      left: 25%
+
+.sponsors-list
+  margin: 0
+  padding: 0 0 3em 0
+  list-style: none
+  text-align: center
+
+.support-list
+  .sponsors-item
+    margin: 1em
+
+.sponsors-item
+  display: inline-block
+  margin: 3em
+  width: 20em
+  height: 12.5em
+
+.sponsors-link
+  display: inline-block
+  width: 90%
+  height: 100%
+  margin: 0 auto
+  text-align: center
+  position: relative
+  text-decoration: none
+  background-repeat: no-repeat
+  background-size: 90%
+  background-position: center center
+  opacity: .6
+  -webkit-backface-visibility: hidden
+  -webkit-transform: translateZ(0) scale(1.0, 1.0)
+  borderColor = #ccc
+
+  &:hover
+    opacity: 1
+
+  &:after, &:before
+    content: ''
+    width: 2em
+    height: @width
+    position: absolute
+    opacity: 1
+  
+  &:after
+    left: -.4em
+    top: -.1em
+    border-top: 1px solid borderColor
+    border-left: @border-top
+
+  &:before
+    right: -.4em
+    bottom: -.2em
+    border-right: 1px solid borderColor
+    border-bottom: @border-right
+
+  &.w3c
+    background-image: url('../img/sponsors/w3c.png')
+
+  &.cgi
+    background-image: url('../img/sponsors/cgibr.png')
+
+  &.nic
+    background-image: url('../img/sponsors/nicbr.png')
+
+  &.nextt
+    background-image: url('../img/sponsors/nextt.png')
+
+  &.iw
+    background-image: url('../img/sponsors/inteligencia-web.png')
+
+  &.senai
+    background-image: url('../img/sponsors/senai.png')
+
+  &.globo
+    background-image: url('../img/sponsors/globocom.png')
+
+  &.braziljs
+    background-image: url('../img/sponsors/braziljs.png')
+
+  &.novatec
+    background-image: url('../img/sponsors/novatec.png')
+
+  &.solisc
+    background-image: url('../img/sponsors/solisc.png')
+
+  &.acate
+    background-image: url('../img/sponsors/acate.png')
+
+  &.gdsc
+    background-image: url('../img/sponsors/gdsc.png')
+    
+  &.emailmanager
+    background-image: url('../img/sponsors/emailmanager.png')
+
+  &.phpsc
+    background-image: url('../img/sponsors/phpsc.png')
+
+  &.floripajs
+    background-image: url('../img/sponsors/floripajs.png')
+
+  &.codeway
+    background-image: url('../img/sponsors/codeway.png')
+
+  &.jointi
+    background-image: url('../img/sponsors/jointi.png')
+    
+  &.treinaweb
+    background-image: url('../img/sponsors/treina-web.png')
+    
+  &.resultados-digitais
+    background-image: url('../img/sponsors/resultados-digitais.png')
+
+#support
+  display: block
+  margin-bottom: 6em

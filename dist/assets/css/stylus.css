@@ -1,0 +1,2348 @@
+@charset "UTF-8";
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/modules/_pure-override.scss */
+html, button, input, select, textarea,
+.pure-g [class*="pure-u"],
+.pure-g-r [class*="pure-u"] {
+  font-family: "proxima-nova", sans-serif; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 7, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, input, ul, li, p {
+  font-family: "proxima-nova", sans-serif !important;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important; }
+
+/* line 14, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+input {
+  font-family: "proxima-nova", sans-serif; }
+
+/* line 18, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* line 24, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+h1, h2, h3, h4 {
+  font-weight: normal;
+  margin: 0; }
+
+/* line 29, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+p {
+  margin: 0; }
+
+/* line 33, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+.wrapper-full {
+  width: 1100px;
+  margin: 0 auto; }
+
+/* line 38, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+.wrapper-slim {
+  width: 750px;
+  margin: 0 auto; }
+
+/* line 43, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+h1.main-page-header, h2.main-page-header {
+  font-weight: 800;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #2B2B2B;
+  text-align: center; }
+
+/* line 51, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+h3.main-sub-header {
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 0 130px; }
+  /* line 58, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+  h3.main-sub-header strong {
+    font-weight: 600; }
+
+/* line 63, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+.flash {
+  padding: 25px;
+  background-color: #EFF7FC;
+  margin-bottom: 50px;
+  color: #2E4963;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  position: relative; }
+  /* line 71, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+  .flash p {
+    padding-right: 160px;
+    font-size: 19px; }
+    /* line 75, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+    .flash p strong {
+      font-weight: 600; }
+  /* line 80, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+  .flash a {
+    background: #3686be;
+    padding: 7px 15px;
+    color: #FFF;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    position: absolute;
+    right: 22px;
+    top: 22px; }
+
+/* line 97, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+#white-header {
+  border-bottom: 1px solid #e1e1e1; }
+
+/* line 101, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_layout.scss */
+.main {
+  padding: 70px 0 100px 0;
+  float: left;
+  width: 100%;
+  text-align: center; }
+
+/* line 3, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+.help-section #white-header, .changelog-wrap #white-header {
+  margin-bottom: 55px; }
+/* line 7, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+.help-section .wrapper-full, .changelog-wrap .wrapper-full {
+  position: relative;
+  text-align: left; }
+  /* line 11, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+  .help-section .wrapper-full .cloud-status, .changelog-wrap .wrapper-full .cloud-status {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    color: #454545; }
+    /* line 17, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full .cloud-status a, .changelog-wrap .wrapper-full .cloud-status a {
+      color: inherit; }
+    /* line 21, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full .cloud-status span, .changelog-wrap .wrapper-full .cloud-status span {
+      width: 12px;
+      height: 12px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      border-radius: 6px;
+      background: #93cc76;
+      display: block;
+      float: left;
+      margin: 3px 12px 0 0; }
+  /* line 32, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+  .help-section .wrapper-full h2, .changelog-wrap .wrapper-full h2 {
+    margin-bottom: 43px;
+    margin-top: 0;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 800;
+    color: #454545; }
+  /* line 42, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+  .help-section .wrapper-full aside#help-nav, .changelog-wrap .wrapper-full aside#help-nav {
+    width: 275px;
+    float: left;
+    margin-left: 75px;
+    margin-top: 5px; }
+    /* line 48, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full aside#help-nav h2, .changelog-wrap .wrapper-full aside#help-nav h2 {
+      font-weight: 300;
+      font-size: 24px;
+      margin-bottom: 12px;
+      padding-left: 20px; }
+    /* line 55, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full aside#help-nav a.feed, .changelog-wrap .wrapper-full aside#help-nav a.feed {
+      text-indent: -9999px;
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      top: 15px;
+      right: 13px;
+      background-color: none;
+      background-image: url("../images/feed-82b9fbdb.png");
+      padding: 0; }
+      /* line 66, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+      .help-section .wrapper-full aside#help-nav a.feed:hover, .changelog-wrap .wrapper-full aside#help-nav a.feed:hover {
+        background-position: 0 -20px;
+        background-image: url("../images/feed-82b9fbdb.png"); }
+    /* line 72, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full aside#help-nav li.sidebar-title, .changelog-wrap .wrapper-full aside#help-nav li.sidebar-title {
+      padding: 9px 40px 9px 20px;
+      font-weight: 400;
+      font-size: 18px;
+      color: #3686be;
+      position: relative; }
+    /* line 80, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full aside#help-nav li.hasSub a:after, .changelog-wrap .wrapper-full aside#help-nav li.hasSub a:after {
+      position: relative;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 7px solid #9e9e9e;
+      display: inline-block;
+      margin-left: 12px; }
+    /* line 92, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full aside#help-nav li.hasSub.open a:after, .changelog-wrap .wrapper-full aside#help-nav li.hasSub.open a:after {
+      position: relative;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 7px solid #9e9e9e;
+      display: inline-block;
+      margin-left: 12px;
+      top: 4px; }
+    /* line 105, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full aside#help-nav li.hasSub > a.active, .changelog-wrap .wrapper-full aside#help-nav li.hasSub > a.active {
+      background: white;
+      color: #989898; }
+      /* line 108, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+      .help-section .wrapper-full aside#help-nav li.hasSub > a.active a.active, .changelog-wrap .wrapper-full aside#help-nav li.hasSub > a.active a.active {
+        background-color: #f9f9f9; }
+    /* line 113, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full aside#help-nav li, .changelog-wrap .wrapper-full aside#help-nav li {
+      border: 1px solid #E8E8E8;
+      float: left;
+      width: 100%;
+      margin-top: -1px;
+      margin-left: -1px; }
+      /* line 120, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+      .help-section .wrapper-full aside#help-nav li a.active, .changelog-wrap .wrapper-full aside#help-nav li a.active {
+        background-color: #f9f9f9;
+        color: #3686be; }
+        /* line 123, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+        .help-section .wrapper-full aside#help-nav li a.active:hover, .changelog-wrap .wrapper-full aside#help-nav li a.active:hover {
+          color: #3686be; }
+      /* line 128, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+      .help-section .wrapper-full aside#help-nav li h3, .changelog-wrap .wrapper-full aside#help-nav li h3 {
+        color: #989898;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 2px 0 1px 0;
+        line-height: 1.2; }
+      /* line 136, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+      .help-section .wrapper-full aside#help-nav li p.small, .changelog-wrap .wrapper-full aside#help-nav li p.small {
+        font-size: 12px;
+        display: inline; }
+        /* line 140, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+        .help-section .wrapper-full aside#help-nav li p.small:after, .changelog-wrap .wrapper-full aside#help-nav li p.small:after {
+          content: "•";
+          position: relative;
+          padding: 0 4px 0 8px; }
+        /* line 147, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+        .help-section .wrapper-full aside#help-nav li p.small:last-child:after, .changelog-wrap .wrapper-full aside#help-nav li p.small:last-child:after {
+          display: none;
+          padding: 0; }
+      /* line 154, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+      .help-section .wrapper-full aside#help-nav li a, .changelog-wrap .wrapper-full aside#help-nav li a {
+        display: block;
+        padding: 13px 17px;
+        text-decoration: none;
+        color: #989898;
+        font-size: 16px;
+        font-weight: 600; }
+        /* line 162, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+        .help-section .wrapper-full aside#help-nav li a:hover, .changelog-wrap .wrapper-full aside#help-nav li a:hover {
+          background: #F4F4F4;
+          color: #454545; }
+          /* line 166, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+          .help-section .wrapper-full aside#help-nav li a:hover h3, .changelog-wrap .wrapper-full aside#help-nav li a:hover h3 {
+            color: #676767;
+            line-height: 1.2; }
+    /* line 174, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full aside#help-nav ul.sub-nav, .changelog-wrap .wrapper-full aside#help-nav ul.sub-nav {
+      display: none; }
+      /* line 179, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+      .help-section .wrapper-full aside#help-nav ul.sub-nav li a, .changelog-wrap .wrapper-full aside#help-nav ul.sub-nav li a {
+        padding-left: 40px;
+        font-size: 16px;
+        font-weight: 600; }
+      /* line 184, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+      .help-section .wrapper-full aside#help-nav ul.sub-nav li:first-child, .changelog-wrap .wrapper-full aside#help-nav ul.sub-nav li:first-child {
+        border-top: 1px solid #efefef; }
+    /* line 190, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full aside#help-nav li.open + ul.sub-nav, .changelog-wrap .wrapper-full aside#help-nav li.open + ul.sub-nav {
+      display: block; }
+    /* line 196, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full aside#help-nav li.hasSub ul a:after, .changelog-wrap .wrapper-full aside#help-nav li.hasSub ul a:after {
+      display: none; }
+  /* line 203, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+  .help-section .wrapper-full .help-content, .changelog-wrap .wrapper-full .help-content {
+    width: 750px;
+    float: left;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #454545; }
+    /* line 210, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full .help-content h1, .changelog-wrap .wrapper-full .help-content h1 {
+      margin-bottom: 25px;
+      text-align: left;
+      font-size: 36px;
+      line-height: 40px;
+      font-weight: 800;
+      color: #454545; }
+    /* line 219, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full .help-content h4, .changelog-wrap .wrapper-full .help-content h4 {
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #c8c8c8;
+      font-weight: 600;
+      letter-spacing: .3px;
+      margin-bottom: -2px; }
+    /* line 228, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full .help-content p, .changelog-wrap .wrapper-full .help-content p {
+      margin-bottom: 20px; }
+      /* line 231, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+      .help-section .wrapper-full .help-content p a, .changelog-wrap .wrapper-full .help-content p a {
+        color: #454545;
+        border-bottom: 1px dotted #9e9e9e;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
+        /* line 236, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+        .help-section .wrapper-full .help-content p a:hover, .changelog-wrap .wrapper-full .help-content p a:hover {
+          color: black;
+          border-bottom: 1px dotted #454545; }
+    /* line 243, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full .help-content h3, .changelog-wrap .wrapper-full .help-content h3 {
+      font-weight: 600;
+      font-size: 22px;
+      margin-bottom: 10px;
+      line-height: 1.3;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+      color: #3686be; }
+      /* line 252, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+      .help-section .wrapper-full .help-content h3:first-of-type, .changelog-wrap .wrapper-full .help-content h3:first-of-type {
+        border-top: 0;
+        padding-top: 0; }
+    /* line 258, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full .help-content ul, .help-section .wrapper-full .help-content ol, .changelog-wrap .wrapper-full .help-content ul, .changelog-wrap .wrapper-full .help-content ol {
+      margin-bottom: 30px;
+      padding-left: 25px; }
+      /* line 262, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+      .help-section .wrapper-full .help-content ul li, .help-section .wrapper-full .help-content ol li, .changelog-wrap .wrapper-full .help-content ul li, .changelog-wrap .wrapper-full .help-content ol li {
+        margin-bottom: 1px;
+        margin-left: 21px;
+        list-style-position: outside;
+        list-style-type: disc; }
+        /* line 268, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+        .help-section .wrapper-full .help-content ul li a, .help-section .wrapper-full .help-content ol li a, .changelog-wrap .wrapper-full .help-content ul li a, .changelog-wrap .wrapper-full .help-content ol li a {
+          color: #454545;
+          border-bottom: 1px dotted #9e9e9e;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -ms-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+          /* line 273, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+          .help-section .wrapper-full .help-content ul li a:hover, .help-section .wrapper-full .help-content ol li a:hover, .changelog-wrap .wrapper-full .help-content ul li a:hover, .changelog-wrap .wrapper-full .help-content ol li a:hover {
+            color: black;
+            border-bottom: 1px dotted #454545; }
+    /* line 281, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+    .help-section .wrapper-full .help-content ol, .changelog-wrap .wrapper-full .help-content ol {
+      list-style: none;
+      padding-left: 0;
+      display: table;
+      margin: 0 0 0 24px; }
+      /* line 287, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+      .help-section .wrapper-full .help-content ol li, .changelog-wrap .wrapper-full .help-content ol li {
+        margin-bottom: 0.5em;
+        display: table-row;
+        counter-increment: table-ol; }
+        /* line 292, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+        .help-section .wrapper-full .help-content ol li:before, .changelog-wrap .wrapper-full .help-content ol li:before {
+          content: counter(table-ol) ".";
+          display: table-cell;
+          padding-right: 0.4em;
+          text-align: left; }
+        /* line 299, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+        .help-section .wrapper-full .help-content ol li:after, .changelog-wrap .wrapper-full .help-content ol li:after {
+          content: "";
+          display: block;
+          margin-bottom: 0.5em; }
+
+/* line 312, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_help.scss */
+.help-section .wrapper-full aside#help-nav {
+  float: left;
+  margin: 0 75px 0 0; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_api.scss */
+pre {
+  background-color: #f4f4f4;
+  color: #3381b7;
+  overflow: scroll;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  /* line 7, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_api.scss */
+  pre code {
+    padding: 1em !important;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    display: block; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.hljs-comment, .hljs-title {
+  color: #8e908c; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.hljs-variable, .hljs-attribute, .hljs-tag, .hljs-regexp, .ruby .hljs-constant, .xml .hljs-tag .hljs-title, .xml .hljs-pi, .xml .hljs-doctype, .html .hljs-doctype, .css .hljs-id, .css .hljs-class, .css .hljs-pseudo {
+  color: #c82829; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.hljs-number, .hljs-preprocessor, .hljs-pragma, .hljs-built_in, .hljs-literal, .hljs-params, .hljs-constant {
+  color: #f5871f; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.ruby .hljs-class .hljs-title, .css .hljs-rules .hljs-attribute {
+  color: #eab700; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.hljs-string, .hljs-value, .hljs-inheritance, .hljs-header, .ruby .hljs-symbol, .xml .hljs-cdata {
+  color: #718c00; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.css .hljs-hexcolor {
+  color: #3e999f; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.hljs-function, .python .hljs-decorator, .python .hljs-title, .ruby .hljs-function .hljs-title, .ruby .hljs-title .hljs-keyword, .perl .hljs-sub, .javascript .hljs-title, .coffeescript .hljs-title {
+  color: #4271ae; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.hljs-keyword, .javascript .hljs-function {
+  color: #8959a8; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.hljs {
+  display: block;
+  background: white;
+  color: #4d4d4c;
+  padding: .5em; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.coffeescript .javascript, .javascript .xml, .tex .hljs-formula, .xml .javascript, .xml .vbscript, .xml .css, .xml .hljs-cdata {
+  opacity: .5; }
+
+/* line 3, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.aglio {
+  font-family: 'Raleway' sans-serif !important; }
+
+/* line 7, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  display: none; }
+
+/* line 14, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+h1:hover a,
+h2:hover a,
+h3:hover a,
+h4:hover a,
+h5:hover a {
+  display: inline; }
+
+/* line 21, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+code {
+  color: #444;
+  background-color: #ddd;
+  font-family: 'Inconsolata' monospace !important; }
+
+/* line 26, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+a[data-target] {
+  cursor: pointer; }
+
+/* line 29, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+h4 {
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+/* line 34, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.back-to-top {
+  position: fixed;
+  z-index: 1;
+  bottom: 0px;
+  right: 24px;
+  padding: 4px 8px;
+  background-color: #eee;
+  text-decoration: none !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; }
+
+/* line 48, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.panel {
+  overflow: hidden; }
+
+/* line 51, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.panel-heading code {
+  color: #c7254e;
+  background-color: transparent; }
+
+/* line 55, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.panel-heading h3 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+/* line 59, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+a.list-group-item {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+/* line 64, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+a.list-group-item.heading {
+  background-color: #f5f5f5; }
+
+/* line 67, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-oauth.scss */
+.list-group-item.collapse {
+  display: none; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-v2.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 5, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-v2.scss */
+nav#nav {
+  width: 275px;
+  float: left;
+  margin-right: 75px; }
+  /* line 10, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-v2.scss */
+  nav#nav ul.list-group {
+    border: 1px solid #cfcfcf;
+    margin-bottom: 20px;
+    border-radius: 3px; }
+    /* line 17, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-v2.scss */
+    nav#nav ul.list-group li.heading a {
+      font-size: 19px;
+      font-weight: 400;
+      background-color: #F1F1F1;
+      padding: 9px 13px; }
+    /* line 25, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-v2.scss */
+    nav#nav ul.list-group li {
+      width: 100%;
+      border-bottom: 1px solid #cfcfcf; }
+      /* line 29, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-v2.scss */
+      nav#nav ul.list-group li a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 10px 13px;
+        font-weight: 600;
+        font-size: 15px; }
+        /* line 37, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-v2.scss */
+        nav#nav ul.list-group li a:hover {
+          background-color: #f1f1f1; }
+      /* line 42, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-v2.scss */
+      nav#nav ul.list-group li:last-child {
+        border-bottom: none; }
+      /* line 46, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-v2.scss */
+      nav#nav ul.list-group li ul {
+        border-top: 1px solid #cfcfcf; }
+        /* line 51, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-v2.scss */
+        nav#nav ul.list-group li ul li a {
+          font-weight: 400;
+          padding-left: 30px; }
+        /* line 56, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-v2.scss */
+        nav#nav ul.list-group li ul li:last-child {
+          border-bottom: none; }
+        /* line 60, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_style-v2.scss */
+        nav#nav ul.list-group li ul li:before {
+          content: "";
+          position: relative; }
+
+/* line 11, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+header {
+  float: left;
+  width: 100%;
+  height: 58px;
+  background: #21292E;
+  position: relative;
+  z-index: 100; }
+
+/* line 20, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+header ul {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  bottom: 0; }
+
+/* line 28, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+header li {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 58px;
+  position: relative; }
+
+/* line 37, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+header li a {
+  color: #919191;
+  font-weight: 400;
+  display: block;
+  padding: 0 30px;
+  text-align: center;
+  text-decoration: none;
+  border-right: 1px solid #344047;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  transition: all 200ms ease;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+/* line 53, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+header li:first-child a {
+  border-left: 1px solid #344047; }
+
+/* line 57, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+header li a:hover {
+  color: #F3F3F3; }
+
+/* line 61, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+header li.active a {
+  color: #fff; }
+
+/* line 65, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+header li.active:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 1px;
+  background: #fff;
+  height: 2px;
+  bottom: -2px; }
+
+/* line 75, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+.v1 header li:nth-child(2) a {
+  color: #fff; }
+
+/* line 79, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+a.logo {
+  width: 162px;
+  height: 25px;
+  float: left;
+  margin: 17px 0 0 17px;
+  background: url("../images/logo-050b426e.png");
+  display: block; }
+
+/* line 88, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+section.main {
+  min-height: 400px; }
+
+/* line 92, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+footer {
+  background: #2e3234;
+  padding: 100px 0 60px 0;
+  color: #747474;
+  float: left;
+  width: 100%; }
+  /* line 99, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+  footer a {
+    color: #b8b8b8;
+    font-weight: 600; }
+  /* line 104, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+  footer h3 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    margin-bottom: 17px;
+    font-weight: 600; }
+  /* line 113, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+  footer .footer-column {
+    float: left; }
+    /* line 118, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+    footer .footer-column ul li {
+      margin-bottom: 7px; }
+      /* line 121, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+      footer .footer-column ul li a {
+        text-decoration: none;
+        font-size: 16px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
+      /* line 127, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+      footer .footer-column ul li a:hover {
+        color: #f1f1f1; }
+  /* line 134, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+  footer #column-main {
+    width: 212px;
+    font-size: 15px; }
+    /* line 138, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+    footer #column-main a {
+      color: #747474;
+      text-decoration: none;
+      display: block;
+      line-height: 1.4; }
+    /* line 145, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+    footer #column-main a.cloud-icon {
+      text-indent: -9999px;
+      width: 61px;
+      height: 33px;
+      background-size: 61px 33px;
+      background: url("../images/cloud-6a1216d2.svg") no-repeat;
+      display: block;
+      margin-bottom: 30px; }
+    /* line 155, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+    footer #column-main #copyright {
+      margin-bottom: 10px; }
+    /* line 159, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+    footer #column-main #made-in-ny {
+      margin-bottom: 22px; }
+    /* line 165, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+    footer #column-main #privacy a {
+      color: #b8b8b8;
+      font-size: 14px;
+      font-weight: 600; }
+  /* line 173, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+  footer #column-product {
+    width: 190px; }
+  /* line 177, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+  footer #column-company {
+    width: 190px; }
+  /* line 181, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+  footer #column-help {
+    width: 195px; }
+  /* line 185, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+  footer #column-community {
+    width: 185px; }
+  /* line 189, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+  footer #column-connect {
+    float: right; }
+    /* line 195, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+    footer #column-connect ul li a {
+      background-image: url("../images/sprites/social-0668a567.png");
+      background-repeat: no-repeat;
+      display: inline-block;
+      position: relative;
+      padding-left: 30px; }
+    /* line 203, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+    footer #column-connect ul li.twitter a {
+      background-position: 0 5px; }
+    /* line 207, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+    footer #column-connect ul li.facebook a {
+      background-position: 0 -20px; }
+    /* line 211, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+    footer #column-connect ul li.linkedin a {
+      background-position: 0 -44px; }
+    /* line 215, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+    footer #column-connect ul li.google a {
+      background-position: 0 -68px; }
+    /* line 219, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+    footer #column-connect ul li.instagram a {
+      background-position: 0 -92px; }
+  /* line 226, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style.scss */
+  footer #droplet-count {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #939393; }
+
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 10, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 20, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 31, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 51, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 64, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 74, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 86, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 106, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 114, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 123, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 132, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 141, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 150, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 158, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 166, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 170, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 181, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 189, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 200, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 208, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 218, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 226, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 249, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+/* line 263, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 274, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 287, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 299, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 308, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 319, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 331, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 343, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 354, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 367, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 376, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 387, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9.
+ */
+/* line 396, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 405, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 416, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 421, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_pure-tables.scss */
+.pure-table {
+  /* Remove spacing between table cells (from Normalize.css) */
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #cbcbcb; }
+
+/* line 9, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_pure-tables.scss */
+.pure-table caption {
+  color: #000;
+  font: italic 85%/1 arial, sans-serif;
+  padding: 1em 0;
+  text-align: center; }
+
+/* line 16, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_pure-tables.scss */
+.pure-table td,
+.pure-table th {
+  border-left: 1px solid #cbcbcb;
+  /*  inner column border */
+  border-width: 0 0 0 1px;
+  font-size: inherit;
+  margin: 0;
+  overflow: visible;
+  /*to make ths where the title is really long work*/
+  padding: 0.5em 1em;
+  /* cell padding */ }
+
+/* line 25, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_pure-tables.scss */
+.pure-table td:first-child,
+.pure-table th:first-child {
+  border-left-width: 0; }
+
+/* line 30, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_pure-tables.scss */
+.pure-table thead {
+  background: #e0e0e0;
+  color: #000;
+  text-align: left;
+  vertical-align: bottom; }
+
+/*
+striping:
+   even - #fff (white)
+   odd  - #f2f2f2 (light gray)
+*/
+/* line 42, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_pure-tables.scss */
+.pure-table td {
+  background-color: transparent; }
+
+/* line 45, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_pure-tables.scss */
+.pure-table-odd td {
+  background-color: #f2f2f2; }
+
+/* nth-child selector for modern browsers */
+/* line 50, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_pure-tables.scss */
+.pure-table-striped tr:nth-child(2n-1) td {
+  background-color: #f2f2f2; }
+
+/* BORDERED TABLES */
+/* line 55, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_pure-tables.scss */
+.pure-table-bordered td {
+  border-bottom: 1px solid #cbcbcb; }
+
+/* line 58, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_pure-tables.scss */
+.pure-table-bordered tbody > tr:last-child td,
+.pure-table-horizontal tbody > tr:last-child td {
+  border-bottom-width: 0; }
+
+/* HORIZONTAL BORDERED TABLES */
+/* line 66, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_pure-tables.scss */
+.pure-table-horizontal td,
+.pure-table-horizontal th {
+  border-width: 0 0 1px 0;
+  border-bottom: 1px solid #cbcbcb; }
+
+/* line 71, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_pure-tables.scss */
+.pure-table-horizontal tbody > tr:last-child td {
+  border-bottom-width: 0; }
+
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
+/* line 8, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_solarized.scss */
+.hljs {
+  /*display: inline-block;*/
+  padding: 13px;
+  background: rgba(1, 1, 1, 0.125);
+  color: #A7B3B8;
+  width: 100%;
+  font-size: 14px;
+  display: inline-table; }
+
+/* line 19, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_solarized.scss */
+.hljs-comment,
+.hljs-template_comment,
+.diff .hljs-header,
+.hljs-doctype,
+.hljs-pi,
+.lisp .hljs-string,
+.hljs-javadoc {
+  color: #586e75; }
+
+/* Solarized Green */
+/* line 30, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_solarized.scss */
+.hljs-keyword,
+.hljs-winutils,
+.method,
+.hljs-addition,
+.css .hljs-tag,
+.hljs-request,
+.hljs-status,
+.nginx .hljs-title {
+  color: #BDCC57; }
+
+/* Solarized Cyan */
+/* line 42, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_solarized.scss */
+.hljs-number,
+.hljs-command,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-rules .hljs-value,
+.hljs-phpdoc,
+.tex .hljs-formula,
+.hljs-regexp,
+.hljs-hexcolor,
+.hljs-link_url {
+  color: #64C0B9; }
+
+/* Solarized Blue */
+/* line 56, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_solarized.scss */
+.hljs-title,
+.hljs-localvars,
+.hljs-chunk,
+.hljs-decorator,
+.hljs-built_in,
+.hljs-identifier,
+.vhdl .hljs-literal,
+.hljs-id,
+.css .hljs-function {
+  color: #268bd2; }
+
+/* Solarized Yellow */
+/* line 69, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_solarized.scss */
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.smalltalk .hljs-number,
+.hljs-constant,
+.hljs-class .hljs-title,
+.hljs-parent,
+.haskell .hljs-type,
+.hljs-link_reference {
+  color: #DFC267; }
+
+/* Solarized Orange */
+/* line 82, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_solarized.scss */
+.hljs-preprocessor,
+.hljs-preprocessor .hljs-keyword,
+.hljs-pragma,
+.hljs-shebang,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.diff .hljs-change,
+.hljs-special,
+.hljs-attr_selector,
+.hljs-subst,
+.hljs-cdata,
+.clojure .hljs-title,
+.css .hljs-pseudo,
+.hljs-header {
+  color: #D8744B; }
+
+/* Solarized Red */
+/* line 100, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_solarized.scss */
+.hljs-deletion,
+.hljs-important {
+  color: #dc322f; }
+
+/* Solarized Violet */
+/* line 106, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_solarized.scss */
+.hljs-link_label {
+  color: #6c71c4; }
+
+/* line 110, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_solarized.scss */
+.tex .hljs-formula {
+  background: #073642; }
+
+/* line 1, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  font-size: 13px;
+  line-height: 1.3;
+  visibility: visible;
+  filter: alpha(opacity=0);
+  opacity: 0; }
+
+/* line 11, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip.in {
+  filter: alpha(opacity=100);
+  opacity: 1; }
+
+/* line 15, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip.top {
+  padding: 5px 0;
+  margin-top: -9px; }
+
+/* line 19, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px; }
+
+/* line 23, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px; }
+
+/* line 27, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip.left {
+  padding: 0 5px;
+  margin-left: -8px; }
+
+/* line 31, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip-inner {
+  max-width: 400px;
+  padding: 7px 13px;
+  color: #D5DDE4;
+  text-align: center;
+  text-decoration: none;
+  background-color: #151c21;
+  border-radius: 4px 4px 0 4px; }
+
+/* line 40, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid; }
+
+/* line 47, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip.top .tooltip-arrow {
+  bottom: -2px;
+  right: 1px;
+  margin-left: -5px;
+  border-width: 7px 7px 0;
+  border-top-color: #151c21; }
+
+/* line 54, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip.top-left .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  border-width: 5px 5px 0;
+  border-top-color: #151c21; }
+
+/* line 60, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip.top-right .tooltip-arrow {
+  right: 5px;
+  bottom: 0;
+  border-width: 5px 5px 0;
+  border-top-color: #151c21; }
+
+/* line 66, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #151c21; }
+
+/* line 73, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #151c21; }
+
+/* line 80, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #151c21; }
+
+/* line 87, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #151c21; }
+
+/* line 93, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/_tooltips.scss */
+.tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #151c21; }
+
+/* line 6, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 14, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+html, body {
+  height: 100%; }
+
+/* line 18, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+body {
+  font-family: "proxima-nova", arial;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #363636;
+  background: #F8F8F8;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 32, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+h1, h2, h3, h4, h5 {
+  font-weight: 600; }
+
+/* line 36, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+b, strong {
+  font-weight: 600; }
+
+/* line 40, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+header {
+  float: left;
+  width: 100%;
+  height: 58px;
+  background: #21292E;
+  position: relative;
+  z-index: 100; }
+
+/* line 49, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+header ul {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  bottom: 0; }
+
+/* line 57, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+header li {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 58px;
+  position: relative; }
+
+/* line 66, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+header li a {
+  color: #919191;
+  font-weight: 400;
+  display: block;
+  padding: 0 30px;
+  text-align: center;
+  text-decoration: none;
+  border-right: 1px solid #344047;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  transition: all 200ms ease;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+/* line 82, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.v2 header li:nth-child(1) a, .oauth header li:nth-child(3) a, .metadata header li:nth-child(4) a, .changelog header li:nth-child(5) a {
+  color: #fff; }
+
+/* line 86, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+header li:first-child a {
+  border-left: 1px solid #344047; }
+
+/* line 90, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+header li a:hover {
+  color: #F3F3F3; }
+
+/* line 94, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+header li.active:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 1px;
+  background: #fff;
+  height: 2px;
+  bottom: -2px; }
+
+/* line 104, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+a.logo {
+  width: 162px;
+  height: 25px;
+  float: left;
+  margin: 17px 0 0 17px;
+  background: url("../images/logo-050b426e.png");
+  display: block; }
+
+/* sidebar */
+/* line 114, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar {
+  position: absolute;
+  width: 200px;
+  top: 58px;
+  bottom: 47px;
+  left: 0;
+  background: #F8F8F8 url("../images/noise-6e593691.jpg");
+  overflow: visible;
+  overflow-y: scroll;
+  z-index: 10;
+  overflow-y: auto;
+  -webkit-transition: padding-top 500ms ease, left 200ms ease;
+  -moz-transition: padding-top 500ms ease, left 200ms ease;
+  transition: padding-top 500ms ease, left 200ms ease; }
+
+/* line 130, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.fixed {
+  position: fixed;
+  top: 0;
+  overflow-x: visible;
+  overflow-y: scroll; }
+
+/* line 137, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar.off-screen {
+  left: -225px; }
+
+/* line 141, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.navicon {
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  top: 108px;
+  left: 14px;
+  width: 24px;
+  height: 17px;
+  background: url("../images/navicon-d19688ab.png");
+  opacity: 0;
+  z-index: 100;
+  -webkit-transition: opacity 500ms ease;
+  -moz-transition: opacity 500ms ease;
+  transition: opacity 500ms ease; }
+
+/* line 157, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.navicon.show {
+  opacity: 1;
+  pointer-events: auto; }
+
+/* line 162, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.navicon.scroll {
+  top: 15px;
+  position: fixed; }
+
+/* line 167, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar ul, .sidebar li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* line 174, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar li {
+  border-bottom: 1px solid #E0E0E0;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  transition: all 200ms ease; }
+
+/* line 181, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar li ul {
+  margin-bottom: 15px; }
+
+/* line 185, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar li ul li {
+  border: none;
+  position: relative; }
+
+/* all links */
+/* line 193, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav > li > a {
+  color: #4D4D4D;
+  border-left: 3px solid transparent;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 400;
+  display: block;
+  text-decoration: none; }
+
+/* line 203, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav > li:hover {
+  /*background: #f3f3f3;*/ }
+
+/* line 208, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav > li.active:hover {
+  background: none; }
+
+/* nested links */
+/* line 213, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav .nav > li > a {
+  padding: 5px 10px 5px 25px;
+  line-height: 1.2; }
+
+/* line 219, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav .nav li:hover, .sidebar .nav .nav a:hover {
+  background: none; }
+
+/* line 223, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav .nav a:hover {
+  color: #000000;
+  font-weight: normal;
+  border-left-color: transparent;
+  background: #F0F0F0; }
+
+/* line 231, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav .nav a:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+  height: 2px;
+  background: #ccc;
+  width: 6px;
+  border-radius: 2px; }
+
+/* line 243, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav .nav a:hover:after {
+  content: "";
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -4px; }
+
+/* line 255, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar a:hover {
+  text-decoration: underline; }
+
+/* active & hover links */
+/* line 261, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav > .active > a, .sidebar .nav > li > a:hover,
+.sidebar .nav > li > a:focus {
+  color: #525252;
+  text-decoration: none;
+  border-left-color: transparent;
+  background: rgba(76, 95, 102, 0.1); }
+
+/* line 269, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav > .active .active a {
+  font-weight: 600;
+  color: #292929;
+  text-decoration: none;
+  background: none;
+  border-left-color: transparent; }
+
+/* line 277, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+li.title {
+  padding: 15px 10px 5px 27px;
+  line-height: 1.2;
+  margin: 8px 0 1px 0;
+  font-weight: 600;
+  font-size: 13px;
+  color: #098BCC;
+  border-top: 1px solid #D2D2D2 !important; }
+
+/* line 287, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav .active .active a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+  height: 2px;
+  background: #098BCC;
+  width: 6px;
+  border-radius: 2px; }
+
+/* line 299, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav .active .active a:after {
+  content: "";
+  border: 2px solid #098BCC;
+  border-radius: 4px;
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -4px; }
+
+/* line 311, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav > li > a:focus {
+  background: #f1f1f1; }
+
+/* all active links */
+/* line 316, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav > .active > a,
+.sidebar .nav > .active:hover > a,
+.sidebar .nav > .active:focus > a {
+  font-weight: 600; }
+
+/* nested active links */
+/* line 322, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav .nav > .active > a,
+.sidebar .nav .nav > .active:hover > a,
+.sidebar .nav .nav > .active:focus > a {
+  font-weight: 400; }
+
+/* line 328, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav > .active .active a, .sidebar .nav > .active .active a:hover {
+  font-weight: 600; }
+
+/* hide inactive nested list */
+/* line 333, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav ul.nav {
+  display: none; }
+
+/* show active nested list */
+/* line 337, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.sidebar .nav > .active > ul.nav {
+  display: block;
+  padding-top: 10px; }
+
+/*Header formatting */
+/* line 343, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.MainContent {
+  margin-top: 50px; }
+
+/* line 346, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.group, .subgroup {
+  padding-top: 50px;
+  margin-top: -50px; }
+
+/* line 352, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+#big-wrap {
+  background: #FFF;
+  margin-left: 200px;
+  min-width: 875px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  transition: all 200ms ease;
+  border-left: 1px solid #E0E0E0;
+  clear: left; }
+
+/* line 364, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.oauth #bump-bottom {
+  min-height: 400px; }
+/* line 367, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.oauth #spacing-fix {
+  padding-top: 35px; }
+/* line 370, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.oauth #spacing-fix h3 {
+  height: auto;
+  line-height: 42px;
+  padding: 0;
+  position: relative;
+  top: 0;
+  margin-bottom: 20px; }
+/* line 378, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.oauth #spacing-fix p.word-break {
+  word-wrap: break-word; }
+
+/* line 383, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+#big-wrap.open {
+  margin-left: 0; }
+
+/* line 387, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+#inner-wrap {
+  margin-left: 50%;
+  position: relative;
+  background: #25323A; }
+
+/* line 393, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set {
+  position: relative; }
+
+/* line 398, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.inner-set {
+  clear: left;
+  margin-left: -100%;
+  padding: 0 0 0 0;
+  position: relative; }
+
+/*.inner-set:after {
+  clear: both;
+  content: "";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}*/
+/* line 416, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.category-head .set-description:before {
+  background-color: #DFDFDF; }
+
+/* line 421, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-description {
+  color: #363636;
+  float: left;
+  padding: 85px 30px 48px;
+  position: relative;
+  width: 50%;
+  z-index: 1;
+  -webkit-transition: padding 200ms ease;
+  -moz-transition: padding 200ms ease;
+  transition: padding 200ms ease;
+  font-size: 14px; }
+  /* line 433, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .set-description h4 {
+    font-size: 19px;
+    margin: 27px 0 6px 0; }
+  /* line 438, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .set-description ul {
+    line-height: 1.3;
+    margin-left: 15px;
+    margin-bottom: 20px; }
+    /* line 443, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+    .set-description ul li {
+      margin-bottom: 10px; }
+      /* line 446, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+      .set-description ul li strong {
+        font-size: 16px; }
+  /* line 453, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .set-description ul.nested {
+    margin: 0 0 0 0;
+    padding: 0;
+    line-height: 1.3; }
+    /* line 458, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+    .set-description ul.nested li {
+      margin: 0 0 20px 0;
+      padding: 0 0 15px 0;
+      border-bottom: 1px solid #e7e7e7;
+      list-style: none; }
+      /* line 464, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+      .set-description ul.nested li strong {
+        font-size: 21px;
+        margin-bottom: 6px;
+        display: block; }
+      /* line 470, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+      .set-description ul.nested li code {
+        font-size: 13px; }
+      /* line 474, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+      .set-description ul.nested li ul {
+        margin: 4px 0 0 18px; }
+        /* line 477, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+        .set-description ul.nested li ul li {
+          margin: 0 0 12px 0;
+          padding: 0;
+          border-bottom: none;
+          list-style: disc; }
+          /* line 483, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+          .set-description ul.nested li ul li strong {
+            font-size: 17px;
+            display: inline; }
+          /* line 490, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+          .set-description ul.nested li ul li ul li {
+            margin: 0 0 2px 0; }
+            /* line 493, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+            .set-description ul.nested li ul li ul li strong {
+              font-size: 15px; }
+
+/* line 505, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-description.open {
+  padding: 0 30px 48px 71px; }
+
+/* line 510, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-description:before {
+  background-color: #E9E9E9;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 1px;
+  top: 0; }
+
+/* line 520, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.category-head .set-description h3 {
+  font-size: 34px;
+  color: #098BCC;
+  font-weight: 300;
+  margin-top: 0px;
+  background: none;
+  border: none;
+  top: 26px; }
+
+/* line 530, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-description h3 {
+  font-size: 20px;
+  margin-bottom: 3px;
+  position: absolute;
+  background: #FCFCFC;
+  width: 100%;
+  left: 0px;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 30px;
+  top: 1px;
+  border-bottom: 1px solid #E9E9E9;
+  color: #098BCC;
+  font-weight: 400;
+  font-size: 19px; }
+
+/* line 547, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-description p:last-of-type {
+  margin-bottom: 0; }
+
+/* line 551, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-description p {
+  line-height: 1.5;
+  margin-bottom: 20px; }
+  /* line 555, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .set-description p code {
+    background: #F3F3F3;
+    padding: 2px 3px;
+    border-radius: 1px; }
+
+/* line 562, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-description a {
+  color: #4A84C2; }
+
+/* line 566, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-description code {
+  background: #f3f3f3; }
+
+/* line 570, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-description table {
+  border: 1px solid #dadada;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 30px; }
+
+/* line 577, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-description p + table {
+  margin-top: 30px; }
+
+/* line 581, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-description table + p {
+  margin-top: 30px; }
+
+/* line 585, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-description table th {
+  border-bottom: 1px solid #dadada; }
+
+/* line 590, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-description table thead {
+  background: #FCFCFC; }
+
+/* line 594, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.category-head .set-curl {
+  padding: 90px 30px 48px; }
+  /* line 597, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .category-head .set-curl:after {
+    background-color: #344047;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    line-height: 1; }
+  /* line 608, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .category-head .set-curl h3 {
+    background: none;
+    content: "";
+    height: 100px;
+    line-height: 100px;
+    left: 0;
+    position: absolute;
+    right: 1px;
+    top: 0px;
+    padding-left: 31px;
+    color: #FFF;
+    font-weight: 300;
+    color: #E0E0E0;
+    letter-spacing: 0;
+    font-size: 34px; }
+
+/* line 626, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-curl {
+  margin-left: 50%;
+  padding: 85px 30px 48px;
+  position: relative;
+  width: 50%;
+  color: white; }
+  /* line 633, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .set-curl code {
+    padding: 13px;
+    background: rgba(1, 1, 1, 0.125);
+    color: #A7B3B8;
+    width: 100%;
+    font-size: 14px;
+    display: inline-table; }
+  /* line 642, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .set-curl h3 {
+    background-color: #27363F;
+    content: "";
+    height: 56px;
+    line-height: 56px;
+    left: 0;
+    position: absolute;
+    right: 1px;
+    top: 0px;
+    padding-left: 28px;
+    color: white;
+    font-weight: 400;
+    color: #E0E0E0;
+    font-size: 18px;
+    letter-spacing: .3px; }
+  /* line 659, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .set-curl p {
+    margin: 20px 0; }
+    /* line 662, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+    .set-curl p a {
+      color: #7C8D97;
+      text-decoration: underline; }
+  /* line 668, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .set-curl .beta {
+    border-radius: 3px;
+    background: #2B3A42;
+    padding: 21px 25px;
+    margin-top: -57px; }
+    /* line 674, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+    .set-curl .beta h2 {
+      font-weight: 300;
+      font-size: 31px; }
+    /* line 679, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+    .set-curl .beta p {
+      color: #96A4AC;
+      font-size: 17px;
+      line-height: 1.3; }
+
+/* line 687, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-curl table {
+  border: none;
+  width: 100%;
+  margin-top: 5px;
+  display: block;
+  overflow: auto; }
+
+/* line 695, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-curl table th {
+  border-bottom: none; }
+
+/* line 699, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-curl table tbody {
+  display: inline-table;
+  width: 100%; }
+
+/* line 704, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-curl table thead {
+  background: none;
+  color: white; }
+
+/* line 709, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-curl table td, .set-curl table th {
+  border-bottom: none; }
+
+/* line 713, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-curl table .hljs {
+  padding: 7px;
+  display: inline-block; }
+
+/* line 718, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-curl .pure-table td, .set-curl .pure-table th {
+  padding: 2px 0 3px 0; }
+
+/* line 722, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-curl h4 {
+  margin-bottom: 9px;
+  font-weight: normal;
+  color: #5B6C75;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1.3px;
+  /*float: left;*/ }
+
+/* line 732, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-curl.topMar {
+  padding-top: 45px; }
+
+/* line 736, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.table-code code {
+  line-height: 2; }
+
+/* line 740, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-curl p {
+  color: #7C8D97; }
+
+/* line 744, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.set-curl pre {
+  clear: right;
+  position: relative;
+  font-size: 0; }
+
+/* line 750, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.metadata .set-curl pre {
+  max-height: 200px; }
+
+/* line 754, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+code {
+  position: relative; }
+
+/* line 758, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+.block {
+  position: relative;
+  margin-bottom: 35px; }
+
+/* line 763, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+a.copy {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #C0C0C0;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 3px;
+  line-height: 1;
+  font-family: "proxima-nova", arial;
+  background-image: url("../images/sprites/clip-sprite-df952d76.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 19px;
+  display: block !important; }
+
+/* line 781, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+a.copy.highlight {
+  background-position: -18px 0; }
+
+/* line 785, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+a.copy.hover {
+  background-position: -36px 0; }
+
+/* line 789, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+a.copy.hover:before {
+  background-position: 0 0; }
+
+/* line 793, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+a.copy.highlight.hover {
+  background-position: -18px 0; }
+
+/* line 797, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+a.copy.highlight:before {
+  position: absolute;
+  content: 'Code copied';
+  top: 5px;
+  right: 25px;
+  color: #61bbb9;
+  font-style: italic;
+  font-size: 13px;
+  width: 100px;
+  text-align: right;
+  opacity: 1; }
+
+@media only screen and (min-width: 1700px) {
+  /* line 812, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  #inner-wrap {
+    margin-left: 875px; }
+
+  /* line 817, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .inner-set {
+    margin-left: -875px; }
+
+  /* line 821, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .set-description {
+    width: 875px; }
+
+  /* line 825, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .set-curl {
+    margin-left: 876px;
+    width: auto; } }
+@media only screen and (max-width: 1000px) {
+  /* line 833, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  #inner-wrap {
+    margin-left: 0;
+    background: white; }
+
+  /* line 838, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  #big-wrap {
+    width: 100%;
+    min-width: 0;
+    padding-left: 200px;
+    margin-left: 0;
+    border-left: none;
+    overflow-x: hidden; }
+
+  /* line 847, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .inner-set {
+    margin-left: 0; }
+
+  /* line 851, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .set-description {
+    width: 100%; }
+
+  /* line 855, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .set-curl {
+    width: 100%;
+    margin-left: 0; }
+
+  /* line 860, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .hljs {
+    background-color: #F0F0F0;
+    color: #575757; }
+
+  /* line 865, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .hljs-number, .hljs-command, .hljs-string, .hljs-tag .hljs-value, .hljs-rules .hljs-value, .hljs-phpdoc, .tex .hljs-formula, .hljs-regexp, .hljs-hexcolor, .hljs-link_url {
+    color: #1AADA2; }
+
+  /* line 869, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .hljs-attribute, .hljs-variable, .lisp .hljs-body, .smalltalk .hljs-number, .hljs-constant, .hljs-class .hljs-title, .hljs-parent, .haskell .hljs-type, .hljs-link_reference {
+    color: #E48219; }
+
+  /* line 873, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .hljs-keyword, .hljs-winutils, .method, .hljs-addition, .css .hljs-tag, .hljs-request, .hljs-status, .nginx .hljs-title {
+    color: #C453C4; }
+
+  /* line 877, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .sidebar, #close-bar {
+    border-right: 1px solid #E0E0E0; }
+
+  /* line 881, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  a.copy {
+    display: none !important; }
+
+  /* line 885, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .set-curl .beta {
+    clear: left; } }
+@media only screen and (max-width: 860px) {
+  /* line 891, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  a.logo {
+    display: none; }
+
+  /* line 896, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  header ul {
+    position: relative;
+    left: 0;
+    width: 100%;
+    float: left; }
+    /* line 902, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+    header ul li {
+      width: 20%; }
+      /* line 905, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+      header ul li a {
+        padding: 0; } }
+@media only screen and (max-width: 630px) {
+  /* line 915, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  .sidebar, #close-bar {
+    left: -225px; }
+
+  /* line 919, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  #big-wrap {
+    padding-left: 0; } }
+@media only screen and (max-width: 600px) {
+  /* line 928, /opt/apps/developers.digitalocean.com/releases/20141114165310/source../css/style-api-v2.scss */
+  header ul li a {
+    font-size: 12px; } }
