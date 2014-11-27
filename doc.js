@@ -1,9 +1,51 @@
 var fs = require('fs');
-var markdown = require('markdown').markdown;
+var marked = require('marked');
+
+var renderer = new marked.Renderer();
+
+
+marked.setOptions({
+  renderer: renderer,
+  langPrefix:'',
+  gfm: true,
+  tables: true,
+  breaks: false,
+  pedantic: false,
+  sanitize: true,
+  smartLists: true,
+  smartypants: false
+});
 
 function getExtension(filename) {
+    console.log();
     var i = filename.lastIndexOf('.');
     return (i < 0) ? '' : filename.substr(i);
+}
+
+function cleanName(file){
+    file = file.replace('.md','');
+    file = file.replace('./','');
+    file = file.replace('src/data/','');
+    file = file.replace(/[^a-z0-9]/gi,'');
+    return file;
+}
+
+function filenameToTitle(file){
+    file = file.substr(3);
+    file = file.replace('.md','');
+    file = file.replace('_',' ');
+    return file;
+}
+
+function getCode(file){
+    file = file.replace('.md','.code.md');
+    
+    if(fs.existsSync(file)){
+        
+        return marked( fs.readFileSync(file ,'utf8') );
+    }
+    return '';
+    
 }
 
 var walk = function(dir) {
@@ -15,20 +57,14 @@ var walk = function(dir) {
             stat = fs.statSync(file);
 
         if(stat && stat.isDirectory()){
-            var nameFolder = filename;
-
-            if(fs.existsSync(file + '/name')){
-                nameFolder = fs.readFileSync(file + '/name','utf8');
-            }
-            
             var sections = walk(file);
+            var firstSection = sections.shift();
 
-            
             if(sections.length>0){
                 results.push({
-                    id: file,
-                    name: nameFolder,
-                    intro: sections.shift(),
+                    id: firstSection.id,
+                    name: filenameToTitle(filename),
+                    intro: firstSection,
                     section: sections
                 });
             }
@@ -36,12 +72,12 @@ var walk = function(dir) {
         }
         else{
             
-            if(getExtension(filename) == '.md'){
+            if( /(\.md)/g.test(filename) && !(/(\.code\.md)/g.test(filename))){
                 results.push({
-                    id: file,
-                    name: filename,
-                    content: markdown.toHTML( fs.readFileSync(file ,'utf8') ),
-                    code: 'content-type: application/json; charset=utf-8'
+                    id: cleanName(file),
+                    name: filenameToTitle(filename),
+                    content: marked( fs.readFileSync(file ,'utf8') ),
+                    code: getCode(file)
                 });
             }
         }

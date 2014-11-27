@@ -45,7 +45,7 @@ gulp.task('template', function () {
 
     
     var apidoc  = doc('./src/data');
-    console.log(apidoc);
+    //console.log(apidoc);
 
     gulp.src('./src/index.hbs')
         .pipe(template({
@@ -64,9 +64,7 @@ gulp.task('template', function () {
 gulp.task('scripts', function() {
     gulp.src([
             './src/javascripts/jquery-1.10.2.min-21daab25.js',
-            './src/javascripts/highlight.pack-a0be87d4.js', 
-            './src/javascripts/scrollspy.min-2f1c4f84.js',
-            './src/javascripts/tooltips.min-30a5b6c6.js'
+            './src/javascripts/scrollspy.min-2f1c4f84.js'
         ])
         .pipe(concat('all.js', {newLine: ';'}))
         .pipe(gulp.dest('./dist/assets/js/'))
@@ -74,8 +72,8 @@ gulp.task('scripts', function() {
 
 gulp.task('stylus', function() {
     gulp.src([
-            './src/assets/css/style-0760adfa.css',
-            './src/assets/css/style-api-v2-1d1c9364.css',
+            './src/assets/css/style-api-v2-1d1c9364.css'
+            
         ])
         .pipe(concat('stylus.css'))
         .pipe(gulp.dest('./dist/assets/css/'))

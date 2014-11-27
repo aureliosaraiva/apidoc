@@ -8,10 +8,11 @@
     <meta name="viewport" content="width=1200, maximum-scale=1" />
     <link rel="alternate" type="application/rss+xml" title="API Changelog | DigitalOcean" href="/changelog/feed.atom"/>
 
-      <link href="assets/css/stylus.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/stylus.css" rel="stylesheet" type="text/css" />
           
 
-    <link type="image/ico" href="assets/images/favicon.ico" rel="icon" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+    
 
 
 
@@ -29,7 +30,7 @@
 <nav class="sidebar">
   <ul id="spyMe" class="nav">
     {{ _.forEach(apidoc, function(item) { }}
-    <li class="active">
+    <li>
       <a href="#{{= item.id }}">{{= item.name }}</a>
       <ul class="nav">
         <li><a href="#{{= item.intro.id }}">{{= item.intro.name }}</a></li>
@@ -53,11 +54,10 @@
     <div class="set category-head">
       <div class="inner-set" id="{{= item.intro.id }}">
         <div class="set-description">{{= item.intro.content }}</div>
-        {{ if (item.intro.code) { }}
             <div class="set-curl">
-              <div class="beta">{{= item.intro.code}}</div>
-            </div>
-        {{ } }}
+                {{= item.intro.code}}
+              
+            </div>  
       </div>
     </div>
 
@@ -66,12 +66,10 @@
         <div class="set">
           <div class="inner-set" id="{{= item2.id }}">
             <div class="set-description">{{= item2.content }}</div>
-            {{ if (item2.code) { }}
                 <div class="set-curl">
-                  <div class="beta">{{= item2.code}}</div>
+                  {{= item2.code}}
                 </div>
-            {{ } }}
-          </div>
+          </div> 
         </div>
     {{ }); }}
 {{ }); }}
@@ -82,7 +80,7 @@
     </div>
   </div>
   <script src="assets/js/all.js" type="text/javascript"></script>
-  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
 
 
     <script type="text/javascript">
@@ -99,7 +97,7 @@
 
         if ($document.scrollTop() >= 90) {
           $(".navicon").addClass('scroll');
-        } else {
+        } else { 
           $(".navicon").removeClass('scroll');
         }
 
@@ -117,28 +115,10 @@
           }
         });
 
-        $(".set-curl pre").each(function(){
-          $(this).parent('.block').append("<a class='copy' title='Copy to clipboard' data-placement='left' href='#'></a>");
-        });
 
-        $('pre code.highlightMe').each(function(i, block) {
+        $('pre code').each(function(i, block) {
           hljs.highlightBlock(block);
-        });
-
-        $('.copy').tooltip();
-
-
-        $('a.copy').on("click", function (){
-
-          $('a.copy').removeClass("highlight");
-
-          var copyMe = $(this).prev('pre').text();
-          window.prompt("Copy to clipboard: Ctrl+C, Enter", copyMe);
-
-          $(this).addClass("highlight");
-
-          return false;
-        });
+        }); 
 
         function slideNav(){
           $(".navicon").toggleClass("show");
