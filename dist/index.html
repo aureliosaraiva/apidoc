@@ -202,9 +202,23 @@
         <div class="set">
           <div class="inner-set" id="01Autenticao01Login">
             <div class="set-description"><h3 id="login">Login</h3>
+<p>POST <strong>/v1/auth</strong></p>
 </div>
                 <div class="set-curl">
-                  
+                  <h3 id="login">Login</h3>
+<h4 id="request-body">Request body</h4>
+<pre><code class="json">{
+    &quot;email&quot;: &quot;email@dominio.com&quot;,
+    &quot;password&quot;: &quot;*******&quot;
+}
+</code></pre>
+<h4 id="response">Response</h4>
+<pre><code class="json">{
+    success: true,
+    token: &quot;$TOKEN&quot;
+}
+</code></pre>
+
                 </div>
           </div> 
         </div>
@@ -213,9 +227,29 @@
         <div class="set">
           <div class="inner-set" id="01Autenticao02LogincomFacebook">
             <div class="set-description"><h3 id="login-com-facebook">Login com Facebook</h3>
+<p>POST <strong>/v1/auth/facebook</strong></p>
 </div>
                 <div class="set-curl">
-                  
+                  <h3 id="login-com-facebook">Login com Facebook</h3>
+<h4 id="request-body">Request body</h4>
+<pre><code class="json">{
+    &quot;access_token&quot;: &quot;$TOKEN_FACEBOOK&quot;
+}
+</code></pre>
+<h4 id="response">Response</h4>
+<pre><code class="json">{
+    success: true,
+    token: &quot;$TOKEN&quot;
+}
+</code></pre>
+<h4 id="response-com-cria-o-de-usu-rio">Response com criação de usuário</h4>
+<pre><code class="json">{
+    success: true,
+    created: true,
+    token: &quot;$TOKEN&quot;
+}
+</code></pre>
+
                 </div>
           </div> 
         </div>
