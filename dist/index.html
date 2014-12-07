@@ -31,27 +31,29 @@
   <ul id="spyMe" class="nav">
     
     <li>
-      <a href="#00Introduo00HTTP">Introdução</a>
+      <a href="#00Introduo00Introduo">Introdução</a>
       <ul class="nav">
-        <li><a href="#00Introduo00HTTP">HTTP</a></li>
+        <li><a href="#00Introduo00Introduo">Introdução</a></li>
 
         
-        <li><a href="#00Introduo01Aurlio">Aurélio</a></li>
+        <li><a href="#00Introduo01Solicitaes">Solicitações</a></li>
         
-        <li><a href="#00Introduo02outro">outro</a></li>
+        <li><a href="#00Introduo02StatusHTTP">Status HTTP</a></li>
         
-        <li><a href="#00Introduo03aurelio">aurelio</a></li>
+        <li><a href="#00Introduo03Respostas">Respostas</a></li>
         
       </ul>
     </li>
     
     <li>
-      <a href="#02Aurlio00Index">Aurélio</a>
+      <a href="#01Autenticao00Autenticao">Autenticação</a>
       <ul class="nav">
-        <li><a href="#02Aurlio00Index">Index</a></li>
+        <li><a href="#01Autenticao00Autenticao">Autenticação</a></li>
 
         
-        <li><a href="#02Aurlio01Error">Error</a></li>
+        <li><a href="#01Autenticao01Login">Login</a></li>
+        
+        <li><a href="#01Autenticao02LogincomFacebook">Login com_Facebook</a></li>
         
       </ul>
     </li>
@@ -67,30 +69,13 @@
 
     
     <div class="set category-head">
-      <div class="inner-set" id="00Introduo00HTTP">
-        <div class="set-description"><h3 id="introdu-o-teste3-">Introdução teste3+</h3>
-<ul>
-<li>100% Mobile Responsive</li>
-<li>Supports GitHub Flavored Markdown</li>
-<li>Auto created homepage/landing page</li>
-<li>Auto Syntax Highlighting  </li>
-<li>Auto Generated Navigation </li>
-<li>4 Built-In Themes or roll your own</li>
-<li>Functional, Flat Design Style</li>
-<li>Shareable/Linkable SEO Friendly URLs</li>
-<li>Built On Bootstrap</li>
-<li>No Build Step</li>
-<li>No Build Step</li>
-<li>Git/SVN Friendly</li>
-<li>Supports Google Analytics and Piwik Analytics</li>
-<li>Optional code float layout</li>
-<li><p>Static Output Generation</p>
-<p>  fdsfsfsd
-<em>teste</em></p>
-</li>
-</ul>
-<pre><code>TESTE GET /user 
-</code></pre></div>
+      <div class="inner-set" id="00Introduo00Introduo">
+        <div class="set-description"><h3 id="api-v1-0-introdu-o">API v1.0 Introdução</h3>
+<p>Bem-vindo à documentação da API Livrio.</p>
+<p>A API Livrio permite gerenciar sua biblioteca dentro da plataforma do Livrio de uma forma simples, usando solicitações HTTP convencionais. As rotas são intuitiva, permitindo que você faça facilmente chamadas para recuperar informações ou para executar ações.</p>
+<p>Todas as funcionalidades que existe no aplicativo Livrio também está disponível através da API, o que lhe permite criar ações completa e complexas.</p>
+<p>A documentação da API vai começar com uma visão geral sobre o design e tecnologia que tem sido implementado, seguido por informações de referência sobre parâmetros específicos.</p>
+</div>
             <div class="set-curl">
                 
               
@@ -101,42 +86,60 @@
     
         <!-- New Section : Intro -->
         <div class="set">
-          <div class="inner-set" id="00Introduo01Aurlio">
-            <div class="set-description"><h3 id="request">Request</h3>
-<p>Any tool that is fluent in HTTP can communicate with the API simply by requesting the correct URI. Requests should be made using the HTTPS protocol so that traffic is encrypted. The interface responds to different methods depending on the action required.</p>
+          <div class="inner-set" id="00Introduo01Solicitaes">
+            <div class="set-description"><h3 id="solicita-es">Solicitações</h3>
+<p>Qualquer ferramenta que implemente recurso HTTP pode se comunicar com a API simplesmente solicitando a URI correto. Os pedidos devem ser feitos utilizando o protocolo HTTPS para que o tráfego seja criptografado. A interface responde a diferentes métodos, dependendo da ação necessária.</p>
+<table class="pure-table pure-table-horizontal">
+<thead>
+<tr>
+<th>Método</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>Por simples recuperação de informações sobre a sua conta, gotas, ou ambiente, você deve usar o GET método. A informação que você pedir será devolvido a você como um objeto JSON. Os atributos definidos pelo objeto JSON pode ser usado para formar pedidos adicionais. Qualquer solicitação usando o método GET é somente leitura e não afetará nenhum dos objetos que você está consultando.</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>Para destruir um recurso e removê-lo da sua conta e meio ambiente, o EXCLUIR deve ser utilizado método. Isto irá remover o objeto especificado se ele for encontrado. Se não for encontrado, a operação irá retornar uma resposta indicando que o objecto não foi encontrado. Este idempotency significa que você não tem para verificar a disponibilidade de um recurso antes de emitir um comando de exclusão, o estado final será o mesmo, independentemente de sua existência.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>Para criar um novo objeto, o seu pedido deverá especificar o POST método.O pedido POST inclui todos os atributos necessários para criar um novo objecto. Quando você quiser criar um novo objeto, enviar um pedido POST para o terminal de destino.</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>Para atualizar as informações sobre um recurso na sua conta, o PUT método está disponível. Como o método de exclusão, o método PUT é idempotente. Ele define o estado do alvo usando os valores fornecidos, independentemente de seus valores atuais. Pedidos usando o método PUT não precisa verificar os atributos atuais do objeto.</td>
+</tr>
+</tbody>
+</table>
 </div>
                 <div class="set-curl">
-                  <h3 id="request">REQUEST</h3>
-<h4 id="example-error-response">EXAMPLE ERROR RESPONSE</h4>
-<pre><code class="http">HTTP/1.1 403 Forbidden
+                  
+                </div>
+          </div> 
+        </div>
+    
+        <!-- New Section : Intro -->
+        <div class="set">
+          <div class="inner-set" id="00Introduo02StatusHTTP">
+            <div class="set-description"><h3 id="status-http">Status HTTP</h3>
+<p>Junto com os métodos HTTP que a API responde a, mas também irá retornar status HTTP padrão, incluindo códigos de erro.</p>
+<p>No caso de um problema, o estado irá conter o código de erro, enquanto que o corpo da resposta será geralmente contêm informações adicionais sobre o problema que foi encontrado.</p>
+<p>Em geral, se o estado devolvido é na gama de 200, isso indica que o pedido foi cumprida com sucesso e que nenhum erro foi encontrado.</p>
+<p>Códigos de retorno na faixa de 400 tipicamente indicam que houve um problema com o pedido que foi enviado. Entre outras coisas, isso pode significar que você não autenticou corretamente, que você está solicitando uma ação que você não tem autorização para, que o objeto que você está solicitando não existe, ou que o seu pedido é mal formado.</p>
+<p>Se você receber um status na faixa de 500, isso geralmente indica um problema do lado do servidor. Isso significa que nós estamos tendo um problema do nosso lado e não pode satisfazer o seu pedido no momento.</p>
+</div>
+                <div class="set-curl">
+                  <h3 id="status-http">Status HTTP</h3>
+<h4 id="exemplo-erro-de-resposta">EXEMPLO ERRO DE RESPOSTA</h4>
+<pre><code class="http">HTTP / 1.1 403 Forbidden
 {
-&quot;error&quot;:       &quot;forbidden&quot;,
-&quot;description&quot;: &quot;You do not have access for the attempted action.&quot;
+  &quot;Erro&quot;: &quot;proibido&quot;,
+  &quot;Description&quot;: &quot;Você não tem acesso para a tentativa de ação.&quot;
 }
-</code></pre>
-<h4 id="example-error-response">EXAMPLE ERROR RESPONSE</h4>
-<pre><code class="http">HTTP/1.1 404 Not Found
-{
-&quot;error&quot;:       &quot;forbidden&quot;,
-&quot;description&quot;: &quot;You do not have access for the attempted action.&quot;
-}
-</code></pre>
-<h4 id="example-error-response">EXAMPLE ERROR RESPONSE</h4>
-<pre><code class="json">{
-&quot;error&quot;:       &quot;forbidden&quot;,
-&quot;description&quot;: &quot;You do not have access for the attempted action.&quot;
-}
-</code></pre>
-<h4 id="example-error-response">EXAMPLE ERROR RESPONSE</h4>
-<pre><code class="python">import __future__ from test
-
-print &quot;teste&quot;
-</code></pre>
-<h4 id="example-error-response">EXAMPLE ERROR RESPONSE</h4>
-<pre><code class="php">
-require_once &#39;future.php&#39;;
-
-echo &quot;teste&quot;;
 </code></pre>
 
                 </div>
@@ -145,282 +148,38 @@ echo &quot;teste&quot;;
     
         <!-- New Section : Intro -->
         <div class="set">
-          <div class="inner-set" id="00Introduo02outro">
-            <div class="set-description"><h3 id="features">Features</h3>
-<ul>
-<li>100% Mobile Responsive</li>
-<li>Supports GitHub Flavored Markdown</li>
-<li>Auto created homepage/landing page</li>
-<li>Auto Syntax Highlighting</li>
-<li>Auto Generated Navigation</li>
-<li>4 Built-In Themes or roll your own</li>
-<li>Functional, Flat Design Style</li>
-<li>Shareable/Linkable SEO Friendly URLs</li>
-<li>Built On Bootstrap</li>
-<li>No Build Step</li>
-<li>Git/SVN Friendly</li>
-<li>Supports Google Analytics and Piwik Analytics</li>
-<li>Optional code float layout</li>
-<li>Static Output Generation</li>
-</ul>
-<h2 id="demos">Demos</h2>
-<p>This is a list of sites using Daux.io:</p>
-<ul>
-<li><a href="http://daux.io">Daux.io</a></li>
-<li><a href="http://felkerdigitalmedia.com/gltn/docs/">Gltn - An open-source word processor webapp</a></li>
-<li><a href="http://ia3.ahoyworld.co.uk/">Invade &amp; Annex 3 - An Arma 3 Co-operative Mission</a></li>
-<li><a href="http://mun.ee">Munee: Standalone PHP 5.3 Asset Optimisation &amp; Manipulation</a></li>
-<li><a href="http://istocode.com/shared/ic-admin/">ICADMIN: An admin panel powered by CodeIgniter.</a></li>
-<li><a href="http://docs.trackjs.com">TrackJs</a> (uses a customized theme)</li>
-<li><a href="http://doc.sugoi.ventrux.com/">Sugoi</a></li>
-<li><a href="http://doc.wallabag.org/index">wallabag</a></li>
-</ul>
-<p>Do you use Daux.io? Send me a pull request or open an <a href="https://github.com/justinwalsh/daux.io/issues">issue</a> and I will add you to the list.</p>
-<h2 id="download">Download</h2>
-<p>Download this repository as a zip, and unpack. Copy the files to a web server that can run PHP 5.3 or greater. You can also run the documentation locally using Grunt.js, which is covered at the end of this readme.</p>
-<h2 id="folders">Folders</h2>
-<p>By default, the generator will look for folders in the <code>docs</code> folder. Add your folders inside the <code>docs</code> folder. This project contains some example folders and files to get you started.</p>
-<p>You can nest folders any number of levels to get the exact structure you want. The folder structure will be converted to the nested navigation.</p>
-<p>If you&#39;d prefer to keep your docs somewhere else (like outside of the daux.io root directory) you can specify your docs path in the <code>global.json</code> file.</p>
-<h2 id="files">Files</h2>
-<p>The generator will look for Markdown files (<code>*.md</code> and <code>*.markdown</code>) inside the <code>docs</code> folder and any of the subfolders within <code>docs</code>. Additional extensions can be added by editing <code>global.json</code></p>
-<p>You must use underscores instead of spaces. Here are some example file names and what they will be converted to:</p>
-<p><strong>Good:</strong></p>
-<ul>
-<li>01_Getting_Started.md = Getting Started</li>
-<li>API_Calls.md = API Calls</li>
-<li>200_Something_Else-Cool.md = Something Else-Cool</li>
-<li>_5_Ways_to_Be_Happy.md = 5 Ways To Be Happy</li>
-</ul>
-<p><strong>Bad:</strong></p>
-<ul>
-<li>File Name With Space.md = FAIL</li>
-</ul>
-<h2 id="sorting">Sorting</h2>
-<p>To sort your files and folders in a specific way, you can prefix them with a number and underscore, e.g. <code>/docs/01_Hello_World.md</code> and <code>/docs/05_Features.md</code> This will list <em>Hello World</em> before <em>Features</em>, overriding the default alpha-numeric sorting. The numbers will be stripped out of the navigation and urls. For the file <code>6 Ways to Get Rich</code>, you can use <code>/docs/_6_Ways_to_Get_Rich.md</code></p>
-<p>You might also wish to stick certain links to the bottom of a page. You can do so by appending a &#39;-&#39; to the start of the filename, e.g. a new file <code>/docs/-Contact_Us.md</code> will always appear at the bottom of the current list. Weights can also be added to further sort the bottom entries. e.g. <code>/docs/-01_Coming.md</code> will appear before <code>/docs/-02_Soon.md</code> but both will only appear after all positive or non-weighted files. </p>
-<h2 id="landing-page">Landing page</h2>
-<p>If you want to create a beautiful landing page for your project, simply create a <code>_index.md</code> file in the root of the <code>/docs</code> folder. This file will then be used to create a landing page. You can also add a tagline and image to this page using the config file like this:</p>
+          <div class="inner-set" id="00Introduo03Respostas">
+            <div class="set-description"><h3 id="respostas">Respostas</h3>
+<p>Quando um pedido é bem sucedida, uma resposta corpo irá tipicamente ser enviado de volta, sob a forma de um objeto JSON. Uma exceção a isso é quando um pedido DELETE é processado, o que irá resultar em uma bem-sucedida HTTP 204 de status e um corpo de resposta vazio.</p>
+<p>Dentro deste objeto JSON, a raiz do recurso que foi o alvo do pedido será definido como a chave. Esta será a forma singular da palavra, se o pedido operado em um único objeto, e a forma plural da palavra, se a coleção foi processado.</p>
+<p>Por exemplo, se você enviar uma solicitação GET para / v2 / gotículas / $ DROPLET_ID você receberá de volta um objeto com uma chave chamada &quot; gota &quot;. No entanto, se você enviar a solicitação GET para a coleção geral da / V2 / gotas , você receberá de volta um objeto com uma chave chamada &quot; gotas &quot;.</p>
+<p>O valor destas teclas será geralmente um objeto JSON para um pedido de um único objecto e um conjunto de objectos para um pedido de uma colecção de objectos.</p>
+</div>
+                <div class="set-curl">
+                  <h3 id="respostas">Respostas</h3>
+<h4 id="resposta-para-um-nico-objecto">RESPOSTA PARA UM ÚNICO OBJECTO</h4>
 <pre><code class="json">{
-    &quot;title&quot;: &quot;Daux.io&quot;,
-    &quot;tagline&quot;: &quot;The Easiest Way To Document Your Project&quot;,
-    &quot;image&quot;: &quot;&lt;base_url&gt;img/app.png&quot;
-}
-</code></pre>
-<p>Note: The image can be a local or remote image. Use the convention <code>&lt;base_url&gt;</code> to refer to the root directory of the Daux instance. </p>
-<h2 id="section-landing-page">Section landing page</h2>
-<p>If you are interested in having a landing page for a subsection of your docs, all you need to do is add an <code>index.md</code> file to the folder. For example, <code>/docs/01_Examples</code> has a landing page for that section since there exists a <code>/docs/01_Examples/index.md</code> file. If you wish to have an landing page for a section sans the document format, use the name <code>_index.md</code></p>
-<h2 id="clean-urls">Clean URLs</h2>
-<p>Daux provides native support for Clean URLs provided the webserver has its URL Rewrite module enabled. To enable the same, simply set the toggle in the <code>config.json</code> file in the <code>/docs</code> folder.</p>
-<pre><code class="json">{
-    &quot;clean_urls&quot;: true
-}
-</code></pre>
-<h2 id="configuration">Configuration</h2>
-<p>To customize the look and feel of your documentation, you can create a <code>config.json</code> file in the of the <code>/docs</code> folder. The <code>config.json</code> file is a simple JSON object that you can use to change some of the basic settings of the documentation.</p>
-<h2 id="title-">Title:</h2>
-<p>Change the title bar in the docs</p>
-<pre><code class="json">{
-    &quot;title&quot;: &quot;Daux.io&quot;
-}
-</code></pre>
-<h2 id="themes-">Themes:</h2>
-<p>We have 4 built-in Bootstrap themes. To use one of the themes, just set the <code>theme</code> option to one of the following:</p>
-<ul>
-<li>blue</li>
-<li>green</li>
-<li>navy</li>
-<li>red</li>
-</ul>
-<pre><code class="json">{
-    &quot;theme&quot;: &quot;blue&quot;
-}
-</code></pre>
-<h2 id="custom-theme-">Custom Theme:</h2>
-<p>To use a custom theme, just copy over the theme folder as well as the <code>.thm</code> file for that theme into the <code>themes</code> directory and set its value in the <code>theme</code> param in config.json</p>
-<pre><code class="json">{
-    &quot;theme&quot;: &quot;new-theme&quot;,
-}
-</code></pre>
-<h2 id="code-floating-">Code Floating:</h2>
-<p>By default your code blocks will be floated to a column on the right side of your content. To disable this feature, set the <code>float</code> property to <code>false</code>.</p>
-<pre><code class="json">{
-    &quot;float&quot;: false
-}
-</code></pre>
-<h2 id="toggling-code-blocks">Toggling Code Blocks</h2>
-<p>Some users might wish to hide the code blocks &amp; view just the documentation. By setting the <code>toggle_code</code> property to <code>true</code>, you can offer a toggle button on the page.</p>
-<pre><code class="json">{
-    &quot;toggle_code&quot;: true
-}
-</code></pre>
-<h2 id="github-repo-">GitHub Repo:</h2>
-<p>Add a &#39;Fork me on GitHub&#39; ribbon.</p>
-<pre><code class="json">{
-    &quot;repo&quot;: &quot;justinwalsh/daux.io&quot;
-}
-</code></pre>
-<h2 id="twitter-">Twitter:</h2>
-<p>Include twitter follow buttons in the sidebar.</p>
-<pre><code class="json">{
-    &quot;twitter&quot;: [&quot;justin_walsh&quot;, &quot;todaymade&quot;]
-}
-</code></pre>
-<h2 id="links-">Links:</h2>
-<p>Include custom links in the sidebar.</p>
-<pre><code class="json">{
-    &quot;links&quot;: {
-        &quot;GitHub Repo&quot;: &quot;https://github.com/justinwalsh/daux.io&quot;,
-        &quot;Help/Support/Bugs&quot;: &quot;https://github.com/justinwalsh/daux.io/issues&quot;,
-        &quot;Made by Todaymade&quot;: &quot;http://todaymade.com&quot;
+    &quot;Gota&quot;: {
+        &quot;Nome&quot;: &quot;example.com&quot;
+        . . .
     }
 }
 </code></pre>
-<h2 id="file-editor-">File editor:</h2>
-<p><img src="https://f.cloud.github.com/assets/1788727/1954191/44358884-81d1-11e3-859d-254b9fb81808.png" alt="File editor"></p>
-<p>Enable front-end Markdown editor. <em>Disabled by default</em>.</p>
+<h4 id="resposta-para-um-objeto-de-cole-o">RESPOSTA PARA UM OBJETO DE COLEÇÃO</h4>
 <pre><code class="json">{
-    &quot;file_editor&quot;: true
-}
-</code></pre>
-<h2 id="google-analytics-">Google Analytics:</h2>
-<p>This will embed the google analytics tracking code.</p>
-<pre><code class="json">{
-    &quot;google_analytics&quot;: &quot;UA-XXXXXXXXX-XX&quot;
-}
-</code></pre>
-<h2 id="piwik-analytics-">Piwik Analytics:</h2>
-<p>This will embed the piwik tracking code.</p>
-<pre><code class="json">{
-    &quot;piwik_analytics&quot;: &quot;my-url-for-piwik.com&quot;
-}
-</code></pre>
-<p>You can Also give a specific Piwik ID as well.</p>
-<pre><code class="json">{
-    &quot;piwik_analytics_id&quot;: &quot;43&quot;
-}
-</code></pre>
-<h2 id="ignore-">Ignore:</h2>
-<p>Set custom files and entire folders to ignore within your <code>/docs</code> folder. For files make sure to include the file extension in the name. For both files and folders, names are case-sensitive.</p>
-<pre><code class="json">    {
-        &quot;ignore&quot;: {
-            &quot;files&quot;: [&quot;Work_In_Progress.md&quot;],
-            &quot;folders&quot;: [&quot;99_Not_Ready&quot;]
+    &quot;gotículas&quot;: [
+        {
+            &quot;Nome&quot;: &quot;example.com&quot;
+            . . .
+        },
+        {
+            &quot;Nome&quot;: &quot;second.com&quot;
+            . . .
         }
-    }
-</code></pre>
-<h2 id="breadcrumb-titles">Breadcrumb titles</h2>
-<p>Daux.io provides the option to present page titles as breadcrumb navigation. You can <em>optionally</em> specify the separator used for breadcrumbs.</p>
-<pre><code class="json">{
-        &quot;breadcrumbs&quot;: true,
-        &quot;breadcrumb_separator&quot; : &quot; &gt; &quot;
+    ]
 }
 </code></pre>
-<h2 id="date-modified">Date Modified</h2>
-<p>By default, daux.io will display the last modified time as reported by the system underneath the title for each document. To disable this, change the option in your config.json to false.</p>
-<pre><code class="json">{
-    &quot;date_modified&quot;: false
-}
-</code></pre>
-<h2 id="timezone">Timezone</h2>
-<p>If your server does not have a default timezone set in php.ini, it may return errors when it tries to generate the last modified date/time for docs. To fix these errors, specify a timezone in your config file. Valid options are available in the <a href="http://php.net/manual/en/timezones.php">PHP Manual</a>.</p>
-<pre><code class="json">{
-        &quot;timezone&quot;: &quot;America/Los_Angeles&quot;
-}
-</code></pre>
-<h2 id="multi-language">Multi-language</h2>
-<p>Enables multi-language support which needs seperate directories for each language in <code>docs/</code> folder.</p>
-<pre><code class="json">{
-        &quot;languages&quot;: { &quot;en&quot;: &quot;English&quot;, &quot;de&quot;: &quot;German&quot; }
-}
-</code></pre>
-<p>Directory structure:</p>
-<pre><code>├── docs/
-│   ├── _index.md
-│   ├── en
-│   │   ├── 00_Getting_Started.md
-│   │   ├── 01_Examples
-│   │   │   ├── 01_GitHub_Flavored_Markdown.md
-│   │   │   ├── 05_Code_Highlighting.md
-│   │   ├── 05_More_Examples
-│   │   │   ├── Hello_World.md
-│   │   │   ├── 05_Code_Highlighting.md
-│   ├── de
-│   │   ├── 00_Getting_Started.md
-│   │   ├── 01_Examples
-│   │   │   ├── 01_GitHub_Flavored_Markdown.md
-│   │   │   ├── 05_Code_Highlighting.md
-│   │   ├── 05_More_Examples
-│   │   │   ├── Hello_World.md
-│   │   │   ├── 05_Code_Highlighting.md
-</code></pre><h2 id="running-remotely">Running Remotely</h2>
-<p>Copy the files from the repo to a web server that can run PHP 5.3 or greater.</p>
-<h2 id="running-locally">Running Locally</h2>
-<p>There are several ways to run the docs locally. You can use something like &lt;a href=&quot;http://www.mamp.info/en/index.html&quot; target=&quot;_blank&quot;&gt;MAMP&lt;/a&gt; or &lt;a href=&quot;http://www.wampserver.com/en/&quot; target=&quot;_blank&quot;&gt;WAMP&lt;/a&gt;. If you are like me and use alot of Node.js and &lt;a href=&quot;http://gruntjs.com/&quot; target=&quot;_blank&quot;&gt;Grunt.js&lt;/a&gt;, then you can use the optional grunt command I have packaged with the project which will start a PHP web server for you in the project folder.</p>
-<p>The Grunt.js task uses the built in web server in PHP 5.4 to host the docs on your local machine. This is really only intended be used when you are writing/updating a ton of docs and want to preview the changes locally.</p>
-<p><strong>To use the optional Grunt command you will need:</strong></p>
-<ul>
-<li>Node.js</li>
-<li>npm</li>
-<li>Grunt.js</li>
-<li>PHP 5.4 or greater (This is because of the built-in web server packaged in 5.4)</li>
-</ul>
-<p>This project contains a package.json file, so once you have the requirements installed, you can simply run a <code>npm install</code> and then <code>grunt</code> in the projects folder to start the local web server. By default the server will run at: &lt;a href=&quot;http://localhost:8085&quot; target=&quot;_blank&quot;&gt;http://localhost:8085&lt;/a&gt;</p>
-<h2 id="generating-a-set-of-static-files">Generating a set of static files</h2>
-<p>These can be uploaded to a static site hosting service such as pages.github.com</p>
-<p>Generating a complete set of pages, with navigation</p>
-<pre><code class="bash">php generate.php [global.json Relative Location] [Output Directory Relative Direction]
-</code></pre>
-<h2 id="running-on-iis">Running on IIS</h2>
-<p>If you have set up a local or remote IIS web site, you may need a <code>web.config</code> with:</p>
-<ul>
-<li>A rewrite configuration, for handling clean urls.</li>
-<li>A mime type handler for less files, if using a custom theme.</li>
-</ul>
-<h2 id="clean-urls">Clean URLs</h2>
-<p>The <code>web.config</code> needs an entry for <code>&lt;rewrite&gt;</code> under <code>&lt;system.webServer&gt;</code>:</p>
-<pre><code class="xml">&lt;configuration&gt;
-    &lt;system.webServer&gt;
-        &lt;rewrite&gt;
-            &lt;rules&gt;
-                &lt;rule name=&quot;Main Rule&quot; stopProcessing=&quot;true&quot;&gt;
-                    &lt;match url=&quot;.*&quot; /&gt;
-                    &lt;conditions logicalGrouping=&quot;MatchAll&quot;&gt;
-                        &lt;add input=&quot;{REQUEST_FILENAME}&quot; matchType=&quot;IsFile&quot; negate=&quot;true&quot; /&gt;
-                        &lt;add input=&quot;{REQUEST_FILENAME}&quot; matchType=&quot;IsDirectory&quot; negate=&quot;true&quot; /&gt;
-                    &lt;/conditions&gt;
-                    &lt;action type=&quot;Rewrite&quot; url=&quot;index.php&quot; appendQueryString=&quot;false&quot; /&gt;
-                &lt;/rule&gt;
-            &lt;/rules&gt;
-        &lt;/rewrite&gt;
-    &lt;/system.webServer&gt;
-&lt;/configuration&gt;
-</code></pre>
-<p>To use clean URLs on IIS 6, you will need to use a custom URL rewrite module, such as <a href="http://urlrewriter.net/">URL Rewriter</a>.</p>
-<h2 id="less-mime-type">Less Mime Type</h2>
-<p>The <code>web.config</code> needs a new <code>&lt;mimeMap&gt;</code> entry, under <code>&lt;staticContent&gt;</code> in <code>&lt;system.webServer&gt;</code>:</p>
-<pre><code class="xml">&lt;staticContent&gt;
-    &lt;mimeMap fileExtension=&quot;.less&quot; mimeType=&quot;text/css&quot; /&gt;
-&lt;/staticContent&gt;
-</code></pre>
-<p>You will only need the mime map entry if you are using a custom theme and receive 404s for <code>.less</code> files.</p>
-<p>If you have a global mime map entry for <code>.less</code> files set for the server, you will receive an internal server (500) error for having duplicate mime map entries.</p>
-<h2 id="support">Support</h2>
-<p>If you need help using Daux.io, or have found a bug, please create an issue on the &lt;a href=&quot;https://github.com/justinwalsh/daux.io/issues&quot; target=&quot;_blank&quot;&gt;GitHub repo&lt;/a&gt;.</p>
-</div>
-                <div class="set-curl">
-                  
-                </div>
-          </div> 
-        </div>
-    
-        <!-- New Section : Intro -->
-        <div class="set">
-          <div class="inner-set" id="00Introduo03aurelio">
-            <div class="set-description"><h3 id="aur-lio">Aurélio</h3>
-</div>
-                <div class="set-curl">
-                  
+
                 </div>
           </div> 
         </div>
@@ -428,12 +187,8 @@ echo &quot;teste&quot;;
 
     
     <div class="set category-head">
-      <div class="inner-set" id="02Aurlio00Index">
-        <div class="set-description"><h3 id="outro-t-tulo">Outro título</h3>
-<p>asdasdasd
-sdas
-d
-asdsa</p>
+      <div class="inner-set" id="01Autenticao00Autenticao">
+        <div class="set-description"><h3 id="autentica-o">Autenticação</h3>
 </div>
             <div class="set-curl">
                 
@@ -445,19 +200,19 @@ asdsa</p>
     
         <!-- New Section : Intro -->
         <div class="set">
-          <div class="inner-set" id="02Aurlio01Error">
-            <div class="set-description"><h3 id="tratamento-de-erros">Tratamento de erros</h3>
-<p>sd
-fd
-f
-sd
-f
-sdf</p>
-<p>s
-df
-s
-f
-sd</p>
+          <div class="inner-set" id="01Autenticao01Login">
+            <div class="set-description"><h3 id="login">Login</h3>
+</div>
+                <div class="set-curl">
+                  
+                </div>
+          </div> 
+        </div>
+    
+        <!-- New Section : Intro -->
+        <div class="set">
+          <div class="inner-set" id="01Autenticao02LogincomFacebook">
+            <div class="set-description"><h3 id="login-com-facebook">Login com Facebook</h3>
 </div>
                 <div class="set-curl">
                   

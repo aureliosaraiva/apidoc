@@ -3,6 +3,17 @@ var marked = require('marked');
 
 var renderer = new marked.Renderer();
 
+renderer.table = function(header, body) {
+  return '<table class="pure-table pure-table-horizontal">\n'
+    + '<thead>\n'
+    + header
+    + '</thead>\n'
+    + '<tbody>\n'
+    + body
+    + '</tbody>\n'
+    + '</table>\n';
+};
+
 
 marked.setOptions({
   renderer: renderer,
@@ -14,6 +25,7 @@ marked.setOptions({
   sanitize: true,
   smartLists: true,
   smartypants: false
+  
 });
 
 function getExtension(filename) {
@@ -58,6 +70,7 @@ var walk = function(dir) {
 
         if(stat && stat.isDirectory()){
             var sections = walk(file);
+            console.log(sections);
             var firstSection = sections.shift();
 
             if(sections.length>0){
@@ -71,7 +84,7 @@ var walk = function(dir) {
 
         }
         else{
-            
+            console.log('--',filename, /(\.md)/g.test(filename) && !(/(\.code\.md)/g.test(filename)));
             if( /(\.md)/g.test(filename) && !(/(\.code\.md)/g.test(filename))){
                 results.push({
                     id: cleanName(file),
@@ -80,6 +93,8 @@ var walk = function(dir) {
                     code: getCode(file)
                 });
             }
+
+            console.log(results);
         }
 
     });
